@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 export default function DestinationsPage() {
   const destinations = [
-    { name: "Lonavala", count: "42+ Homes", desc: "Misty valleys and spectacular viewpoints in the Sahyadris.", img: "https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=1200&auto=format&fit=crop" },
+    { name: "Lonavala", count: "42+ Homes", desc: "Misty valleys and spectacular viewpoints in the Sahyadris.", img: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1200&auto=format&fit=crop" },
     { name: "Alibaug", count: "28+ Homes", desc: "Coastal luxury just a short ferry ride from Mumbai.", img: "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop" },
     { name: "Goa", count: "35+ Homes", desc: "Sun, sand, and exceptional private villas.", img: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1200&auto=format&fit=crop" },
     { name: "Karjat", count: "26+ Homes", desc: "Verdant landscapes and peaceful river retreats.", img: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1200&auto=format&fit=crop" },

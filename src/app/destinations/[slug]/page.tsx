@@ -39,7 +39,7 @@ const DESTINATIONS_DATA: Record<string, DestinationInfo> = {
     bestSeason: "July to February",
     climate: "18°C – 26°C · Hill Station",
     travelTip: "Just 2 hours driving from Mumbai via the Mumbai-Pune Expressway.",
-    heroImage: "https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1600&auto=format&fit=crop",
     properties: [
       { name: "The Glasshouse", slug: "the-glasshouse", price: "24,000", guests: 8, beds: 4, rating: 4.9, reviews: 140, tags: ["Private Pool", "Forest View"], img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" },
       { name: "The Palm Villa", slug: "the-glasshouse", price: "18,000", guests: 6, beds: 3, rating: 4.8, reviews: 120, tags: ["Private Pool", "Valley View"], img: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=800&auto=format&fit=crop" },
