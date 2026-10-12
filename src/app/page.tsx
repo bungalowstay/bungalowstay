@@ -208,12 +208,16 @@ export default function Home() {
                 { name: "Villa Serene", loc: "Assagao, Goa", price: "35,000", guests: 6, rating: 4.8, tags: ["Heritage", "Chef Included"], img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" },
                 { name: "The Cliff Estate", loc: "Karjat, Maharashtra", price: "18,000", guests: 10, rating: 5.0, tags: ["Valley View", "Cinema Room"], img: "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1200&auto=format&fit=crop" },
               ].map((prop, i) => (
-                <div key={i} className="group cursor-pointer">
+                <Link href="/bungalows/the-glasshouse" key={i} className="group cursor-pointer block">
                   <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mb-6 shadow-soft group-hover:shadow-float transition-all duration-500">
                     <Image src={prop.img} alt={prop.name} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/10 opacity-60 transition-opacity duration-500 group-hover:opacity-80" />
                     
-                    <button className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-red-500 transition-all z-10">
+                    <button 
+                      type="button"
+                      onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                      className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-red-500 transition-all z-10"
+                    >
                       <Heart className="w-5 h-5 stroke-[1.5]" />
                     </button>
 
@@ -240,7 +244,7 @@ export default function Home() {
                       <p className="font-serif text-lg text-charcoal">₹{prop.price} <span className="text-[10px] font-sans font-normal text-charcoal/50 tracking-widest uppercase">/ Night</span></p>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
