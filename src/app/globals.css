@@ -1,26 +1,105 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+  --color-beige: var(--beige);
+  --color-charcoal: var(--charcoal);
+  --color-sage: var(--sage);
+  --color-botanical: var(--botanical);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-terracotta: var(--terracotta);
+  --color-forest: var(--forest);
+  --color-sand: var(--sand);
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Premium Shadows */
+  --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  --shadow-float: 0 12px 32px -4px rgba(0, 0, 0, 0.08), 0 4px 16px -4px rgba(0, 0, 0, 0.04);
+  --shadow-deep: 0 24px 48px -12px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 0 40px -10px rgba(197, 168, 128, 0.3);
+
+  /* Animation */
+  --animate-slow-pan: slow-pan 20s linear infinite alternate;
+  
+  @keyframes slow-pan {
+    0% { transform: scale(1.05) translate(0, 0); }
+    100% { transform: scale(1.1) translate(-1%, -1%); }
   }
 }
+
+:root {
+  /* Botanical Luxury Hospitality Palette */
+  --ivory: #FDFBF7;       /* Warm ivory background */
+  --cream: #F6F3EC;       /* Soft cream */
+  --beige: #EBE5DB;       /* Soft beige for subtle sections */
+  --charcoal: #1A1F1B;    /* Deeper natural green/charcoal for text */
+  --sage: #738276;        /* Muted sage/olive green */
+  --botanical: #3A4C3E;   /* Deep botanical green */
+  --forest: #1F2E23;      /* Ultra deep green for footers/accents */
+  --gold: #C5A880;        /* Warm muted gold accent */
+  --gold-light: #DFCAAB;  /* Lighter gold for borders/hover */
+  --terracotta: #A86F58;  /* Earthy accent */
+  --sand: #D5CBB8;        /* Warm neutral sand */
+
+  --background: var(--ivory);
+  --foreground: var(--charcoal);
+}
+
+/* Dark mode disabled for consistent premium editorial aesthetic */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Elegant Editorial Typography */
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Premium Typography Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for clean horizontal scrolling galleries */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Premium Selection */
+::selection {
+  background-color: var(--gold);
+  color: var(--ivory);
+}
+
+/* Focus states for accessibility without compromising design */
+*:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
