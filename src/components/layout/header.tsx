@@ -69,10 +69,10 @@ export function Header({ className, theme = "transparent" }: { className?: strin
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
           
-          {/* LOGO (Properly Sized & Aligned Luxury Badge) */}
+          {/* LOGO (Only Pure Logo Image, Strictly Highlighted & Visible) */}
           <Link href="/" className="flex items-center group relative z-50 flex-shrink-0">
-            <div className="flex items-center gap-2.5 sm:gap-3 bg-white/95 px-3 py-1.5 sm:px-4 sm:py-2 rounded-2xl border border-[#244833]/20 shadow-[0_4px_16px_rgba(36,72,51,0.08)] transition-all duration-300 group-hover:shadow-[0_8px_25px_rgba(36,72,51,0.18)] group-hover:scale-105 group-hover:border-[#244833]/40">
-              <div className="relative h-10 w-10 sm:h-12 sm:w-12 flex-shrink-0">
+            <div className="flex items-center justify-center bg-white/95 px-3 py-1.5 sm:px-4 sm:py-2 rounded-2xl border border-[#244833]/20 shadow-[0_4px_16px_rgba(36,72,51,0.08)] transition-all duration-300 group-hover:shadow-[0_8px_25px_rgba(36,72,51,0.18)] group-hover:scale-105 group-hover:border-[#244833]/40">
+              <div className="relative h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 flex-shrink-0">
                 <Image 
                   src="/logo.png" 
                   alt="Bungalow Stay Logo" 
@@ -80,14 +80,6 @@ export function Header({ className, theme = "transparent" }: { className?: strin
                   className="object-contain drop-shadow-sm"
                   priority
                 />
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="font-serif text-base sm:text-lg font-bold tracking-[0.06em] text-[#244833] leading-none whitespace-nowrap">
-                  BUNGALOW STAY
-                </span>
-                <span className="text-[8px] sm:text-[9px] tracking-[0.25em] uppercase font-bold text-[#A88647] mt-1 whitespace-nowrap">
-                  Luxury Sanctuaries
-                </span>
               </div>
             </div>
           </Link>
