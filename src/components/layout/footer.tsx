@@ -37,14 +37,14 @@ export function Footer() {
         {/* Top Section - Newsletter & Brand */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-24">
           <div className="lg:col-span-5">
-            <Link href="/" className="inline-block mb-10 group relative z-10">
-              <div className="inline-flex items-center justify-center bg-white p-4 rounded-3xl shadow-xl border border-white/40 transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
-                <div className="relative h-20 w-20 flex-shrink-0">
+            <Link href="/" className="inline-block mb-10 group relative z-10" aria-label="Bungalow Stay Home">
+              <div className="inline-flex items-center justify-center bg-white/95 px-6 py-4 rounded-2xl shadow-lg border border-white/20 transition-all duration-300 group-hover:scale-105 group-hover:bg-white">
+                <div className="relative h-16 w-32 flex-shrink-0">
                   <Image 
                     src="/logo.png" 
                     alt="Bungalow Stay Logo" 
                     fill
-                    className="object-contain drop-shadow-md" 
+                    className="object-contain drop-shadow-sm" 
                   />
                 </div>
               </div>

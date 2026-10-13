@@ -69,18 +69,16 @@ export function Header({ className, theme = "transparent" }: { className?: strin
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
           
-          {/* LOGO (Only Pure Logo Image, Strictly Highlighted & Visible) */}
-          <Link href="/" className="flex items-center group relative z-50 flex-shrink-0">
-            <div className="flex items-center justify-center bg-white/95 px-3 py-1.5 sm:px-4 sm:py-2 rounded-2xl border border-[#244833]/20 shadow-[0_4px_16px_rgba(36,72,51,0.08)] transition-all duration-300 group-hover:shadow-[0_8px_25px_rgba(36,72,51,0.18)] group-hover:scale-105 group-hover:border-[#244833]/40">
-              <div className="relative h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 flex-shrink-0">
-                <Image 
-                  src="/logo.png" 
-                  alt="Bungalow Stay Logo" 
-                  fill
-                  className="object-contain drop-shadow-sm"
-                  priority
-                />
-              </div>
+          {/* LOGO (Clean, Elegant, Professional & Crystal Clear) */}
+          <Link href="/" className="flex items-center group relative z-50 flex-shrink-0 py-1" aria-label="Bungalow Stay Home">
+            <div className="relative h-14 w-28 sm:h-16 sm:w-32 md:h-18 md:w-36 transition-transform duration-300 group-hover:scale-105">
+              <Image 
+                src="/logo.png" 
+                alt="Bungalow Stay Logo" 
+                fill
+                className="object-contain object-left drop-shadow-[0_2px_10px_rgba(30,81,51,0.12)] transition-all duration-300"
+                priority
+              />
             </div>
           </Link>
 
