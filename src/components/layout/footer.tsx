@@ -38,16 +38,16 @@ export function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-24">
           <div className="lg:col-span-5">
             <Link href="/" className="inline-block mb-10 group relative z-10">
-              <div className="relative h-24 w-64 lg:h-28 lg:w-72 transition-opacity group-hover:opacity-80">
+              <div className="relative h-24 w-64 lg:h-28 lg:w-72 bg-white/95 rounded-3xl p-4 shadow-lg border border-white/20 transition-transform group-hover:scale-105">
                 <Image 
                   src="/logo.png" 
                   alt="Bungalow Stay Logo" 
                   fill
-                  className="object-contain object-left brightness-0 invert" 
+                  className="object-contain object-center p-2 drop-shadow-sm" 
                 />
               </div>
             </Link>
-            <p className="text-white/70 text-sm leading-relaxed max-w-md mb-10 text-pretty">
+            <p className="text-white/80 text-sm leading-relaxed max-w-md mb-10 text-pretty">
               Discover India's most exceptional private homes and architectural masterworks. Hand-picked, rigorously inspected, and perfectly serviced for your next unforgettable luxury getaway.
             </p>
             
@@ -68,7 +68,7 @@ export function Footer() {
               <input 
                 type="email" 
                 placeholder="Enter your email address" 
-                className="bg-white/5 border border-white/10 rounded-full px-6 py-4 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-gold/50 focus:bg-white/10 transition-all flex-1"
+                className="bg-white/5 border border-[#E2EAE3] rounded-full px-6 py-4 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-gold/50 focus:bg-white/10 transition-all flex-1"
               />
               <button 
                 type="submit" 
@@ -81,7 +81,7 @@ export function Footer() {
         </div>
 
         {/* Middle Section - Links Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-8 pt-16 border-t border-white/10 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-8 pt-16 border-t border-[#E2EAE3] mb-16">
           <div>
             <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-8">Destinations</h4>
             <ul className="space-y-4">
@@ -133,7 +133,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Section - Legal */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-[11px] text-white/40 tracking-wider uppercase">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#E2EAE3] text-[11px] text-white/40 tracking-wider uppercase">
           <p>© {new Date().getFullYear()} Bungalow Stay. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-6 mt-4 md:mt-0">
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

@@ -18,7 +18,7 @@ export default function DestinationsPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-[#EDE8DE]">
+    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -35,10 +35,10 @@ export default function DestinationsPage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">The Locations</p>
               <div className="h-[1px] w-12 bg-gold" />
             </div>
-            <h1 className="font-serif text-5xl md:text-7xl text-white mb-8 tracking-tight">
+            <h1 className="font-serif text-5xl md:text-7xl text-[#1C2921] mb-8 tracking-tight">
               Our Destinations
             </h1>
-            <p className="text-[#EDE8DE]/70 text-lg md:text-xl font-light leading-relaxed text-balance">
+            <p className="text-[#1C2921]/70 text-lg md:text-xl font-light leading-relaxed text-balance">
               Discover India's most breathtaking locations. From misty mountains to sun-drenched coastlines, your perfect getaway awaits in our handpicked enclaves.
             </p>
           </motion.div>
@@ -76,10 +76,10 @@ export default function DestinationsPage() {
                     <div className="h-[1px] flex-1 bg-white/20" />
                   </div>
                   
-                  <h3 className="font-serif text-4xl lg:text-5xl text-white mb-4">{dest.name}</h3>
+                  <h3 className="font-serif text-4xl lg:text-5xl text-[#1C2921] mb-4">{dest.name}</h3>
                   
                   <div className="flex items-end justify-between overflow-hidden">
-                    <p className="text-white/80 text-sm max-w-sm font-light transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                    <p className="text-[#1C2921]/80 text-sm max-w-sm font-light transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
                       {dest.desc}
                     </p>
                     <div className="w-12 h-12 rounded-full border border-white/40 flex items-center justify-center text-white backdrop-blur-md transform translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 delay-200 pointer-events-auto hover:bg-white hover:text-charcoal hover:border-transparent">

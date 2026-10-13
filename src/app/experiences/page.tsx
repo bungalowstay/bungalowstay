@@ -17,7 +17,7 @@ export default function ExperiencesPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-[#EDE8DE]">
+    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -34,10 +34,10 @@ export default function ExperiencesPage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">The Collections</p>
               <div className="h-[1px] w-12 bg-gold" />
             </div>
-            <h1 className="font-serif text-5xl md:text-7xl text-white mb-8 tracking-tight">
+            <h1 className="font-serif text-5xl md:text-7xl text-[#1C2921] mb-8 tracking-tight">
               Journeys by Design
             </h1>
-            <p className="text-[#EDE8DE]/70 text-lg md:text-xl font-light leading-relaxed text-balance">
+            <p className="text-[#1C2921]/70 text-lg md:text-xl font-light leading-relaxed text-balance">
               Whether seeking absolute solitude, architectural brilliance, or spaces for grand celebrations, find the perfect canvas for your next escape.
             </p>
           </motion.div>
@@ -52,11 +52,11 @@ export default function ExperiencesPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: i * 0.1 }}
                 key={i} 
-                className={`flex flex-col lg:flex-row gap-10 items-center p-8 lg:p-10 rounded-[2.5rem] bg-[#141A16]/80 border border-white/5 hover:border-gold/30 transition-all duration-500 ${i % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
+                className={`flex flex-col lg:flex-row gap-10 items-center p-8 lg:p-10 rounded-[2.5rem] bg-white/80 border border-[#E2EAE3] hover:border-gold/30 transition-all duration-500 ${i % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
               >
                 {/* Image */}
                 <Link href={`/experiences/${exp.title.toLowerCase().replace(/ /g, '-')}`} className="w-full lg:w-3/5 group relative">
-                  <div className="relative aspect-[16/9] lg:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
+                  <div className="relative aspect-[16/9] lg:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border border-[#E2EAE3]">
                     <Image 
                       src={exp.img} 
                       alt={exp.title} 
@@ -72,8 +72,8 @@ export default function ExperiencesPage() {
                   <div className="w-12 h-12 rounded-full border border-gold/40 bg-gold/10 flex items-center justify-center text-gold mb-8">
                     <Star className="w-5 h-5 stroke-[1.5]" />
                   </div>
-                  <h2 className="font-serif text-4xl lg:text-5xl text-white mb-6">{exp.title}</h2>
-                  <p className="text-[#EDE8DE]/70 text-lg font-light leading-relaxed mb-10 text-pretty">
+                  <h2 className="font-serif text-4xl lg:text-5xl text-[#1C2921] mb-6">{exp.title}</h2>
+                  <p className="text-[#1C2921]/70 text-lg font-light leading-relaxed mb-10 text-pretty">
                     {exp.sub}
                   </p>
                   <Link 

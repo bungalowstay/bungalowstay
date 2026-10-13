@@ -145,8 +145,8 @@ export default function GuideDetailPage() {
           </div>
 
           {/* Blockquote */}
-          <blockquote className="my-12 p-8 border-l-2 border-gold bg-[#141A16] border border-white/10 rounded-r-2xl">
-            <p className="font-serif text-xl md:text-2xl text-white italic leading-relaxed mb-3">
+          <blockquote className="my-12 p-8 border-l-2 border-gold bg-white border border-[#E2EAE3] rounded-r-2xl">
+            <p className="font-serif text-xl md:text-2xl text-[#1C2921] italic leading-relaxed mb-3">
               "{article.quote}"
             </p>
             <cite className="text-xs uppercase font-bold tracking-widest text-gold not-italic">
@@ -155,8 +155,8 @@ export default function GuideDetailPage() {
           </blockquote>
 
           {/* Where to stay callout */}
-          <div className="bg-[#141A16] border border-white/10 rounded-3xl p-8 my-16 shadow-2xl flex flex-col md:flex-row items-center gap-8">
-            <div className="relative w-full md:w-48 aspect-[4/3] rounded-2xl overflow-hidden shrink-0 border border-white/10">
+          <div className="bg-white border border-[#E2EAE3] rounded-3xl p-8 my-16 shadow-2xl flex flex-col md:flex-row items-center gap-8">
+            <div className="relative w-full md:w-48 aspect-[4/3] rounded-2xl overflow-hidden shrink-0 border border-[#E2EAE3]">
               <Image
                 src={article.recommendedStay.img}
                 alt={article.recommendedStay.name}
@@ -166,7 +166,7 @@ export default function GuideDetailPage() {
             </div>
             <div className="flex-1">
               <p className="text-[10px] font-bold uppercase tracking-widest text-gold mb-1">Featured Sanctuary</p>
-              <h3 className="font-serif text-2xl text-white mb-2">{article.recommendedStay.name}</h3>
+              <h3 className="font-serif text-2xl text-[#1C2921] mb-2">{article.recommendedStay.name}</h3>
               <p className="text-xs text-charcoal/60 mb-4">{article.recommendedStay.loc} · From ₹{article.recommendedStay.price} / night</p>
               <Link
                 href={`/bungalows/${article.recommendedStay.slug}`}

@@ -62,38 +62,38 @@ export function Header({ className, theme = "transparent" }: { className?: strin
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-500",
           scrolled 
-            ? "bg-[#0E1210]/90 backdrop-blur-xl border-b border-[#C9A96E]/20 shadow-[0_10px_30px_rgba(0,0,0,0.8)] py-4" 
+            ? "bg-[#F8FAF7]/95 backdrop-blur-xl border-b border-[#244833]/15 shadow-[0_8px_30px_rgba(28,41,33,0.08)] py-3" 
             : theme === "light" 
-              ? "bg-[#0E1210]/80 backdrop-blur-md border-b border-[#222B24] py-5"
-              : "bg-gradient-to-b from-black/80 via-black/40 to-transparent py-7",
+              ? "bg-[#F8FAF7]/90 backdrop-blur-md border-b border-[#E2EAE3] py-4"
+              : "bg-gradient-to-b from-white/90 via-white/60 to-transparent py-5 backdrop-blur-sm",
           className ? className : ""
         )}
       >
         <div className="container mx-auto flex items-center justify-between px-6 lg:px-12">
           
-          {/* LOGO */}
+          {/* LOGO (Enlarged, Strictly Visible & Crystal Clear) */}
           <Link href="/" className="flex items-center group relative z-50">
-            <div className="relative h-16 w-48 lg:h-20 lg:w-56 transition-transform duration-500 group-hover:scale-105">
+            <div className="relative h-20 w-56 lg:h-24 lg:w-64 transition-transform duration-500 group-hover:scale-105">
               <Image 
                 src="/logo.png" 
                 alt="Bungalow Stay Logo" 
                 fill
-                className="object-contain object-left brightness-0 invert drop-shadow-[0_2px_10px_rgba(201,169,110,0.3)] transition-all duration-500"
+                className="object-contain object-left drop-shadow-[0_4px_16px_rgba(36,72,51,0.18)] transition-all duration-500"
                 priority
               />
             </div>
           </Link>
 
-          {/* DESKTOP NAVIGATION */}
+          {/* DESKTOP NAVIGATION (High Contrast & Crystal Clear) */}
           <nav className="hidden items-center gap-10 lg:flex">
             {navLinks.map((link) => (
               <Link 
                 key={link.name}
                 href={link.href} 
-                className="text-[11px] uppercase tracking-[0.2em] font-medium text-white/80 hover:text-gold transition-colors relative group py-1"
+                className="text-[12px] uppercase tracking-[0.2em] font-semibold text-[#1C2921] hover:text-[#244833] transition-colors relative group py-1"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-gold transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
+                <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-[#244833] transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
               </Link>
             ))}
           </nav>
@@ -102,7 +102,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
           <div className="flex items-center gap-6 relative z-50">
             <Link 
               href="/bungalows"
-              className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-white/20 text-white/80 hover:border-gold hover:text-gold hover:bg-gold/10 transition-all duration-300"
+              className="hidden lg:flex items-center justify-center w-11 h-11 rounded-full border border-[#244833]/25 text-[#1C2921] hover:border-[#244833] hover:text-[#244833] hover:bg-[#244833]/10 transition-all duration-300 shadow-sm"
               aria-label="Search"
             >
               <Search className="h-4 w-4" />
@@ -110,14 +110,14 @@ export function Header({ className, theme = "transparent" }: { className?: strin
             
             <Link 
               href="/bungalows" 
-              className="hidden px-7 py-3 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 lg:block bg-gradient-to-r from-[#C9A96E] to-[#DFCAAB] text-[#080B09] hover:shadow-[0_0_25px_rgba(201,169,110,0.5)] hover:scale-[1.02] active:scale-[0.98]"
+              className="hidden px-8 py-3.5 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 lg:block bg-gradient-to-r from-[#244833] to-[#1A3626] text-white shadow-[0_6px_20px_rgba(36,72,51,0.25)] hover:shadow-[0_10px_30px_rgba(36,72,51,0.4)] hover:scale-[1.02] active:scale-[0.98]"
             >
               Reserve Now
             </Link>
 
             {/* MOBILE MENU TOGGLE */}
             <button 
-              className="lg:hidden flex items-center justify-center w-12 h-12 rounded-full border border-white/20 text-white bg-white/5 backdrop-blur-md hover:border-gold hover:text-gold transition-colors"
+              className="lg:hidden flex items-center justify-center w-12 h-12 rounded-full border border-[#244833]/25 text-[#1C2921] bg-white/80 backdrop-blur-md hover:border-[#244833] transition-colors shadow-sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <Menu className="h-5 w-5" />
@@ -134,7 +134,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-[#0E1210]/98 backdrop-blur-2xl pt-32 px-6 pb-12 flex flex-col lg:hidden overflow-y-auto"
+            className="fixed inset-0 z-40 bg-[#F8FAF7]/98 backdrop-blur-2xl pt-32 px-6 pb-12 flex flex-col lg:hidden overflow-y-auto"
           >
             <nav className="flex flex-col gap-6 mt-8">
               {navLinks.map((link, index) => (
@@ -147,7 +147,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
                   <Link 
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-3xl font-serif text-[#EDE8DE] hover:text-gold transition-colors block py-3 border-b border-white/10"
+                    className="text-3xl font-serif text-[#1C2921] hover:text-[#244833] transition-colors block py-3 border-b border-[#E2EAE3]"
                   >
                     {link.name}
                   </Link>
@@ -164,7 +164,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
               <Link 
                 href="/bungalows" 
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="w-full py-4 rounded-full bg-botanical text-white text-center text-xs font-bold uppercase tracking-widest flex items-center justify-center"
+                className="w-full py-4 rounded-full bg-[#244833] text-white text-center text-xs font-bold uppercase tracking-widest flex items-center justify-center shadow-lg"
               >
                 Reserve Your Stay
               </Link>

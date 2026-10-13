@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export default function ContactPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-[#EDE8DE]">
+    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -20,10 +20,10 @@ export default function ContactPage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">We're Here For You</p>
               <div className="h-[1px] w-8 bg-gold" />
             </div>
-            <h1 className="font-serif text-5xl md:text-7xl text-white mb-8 tracking-tight">
+            <h1 className="font-serif text-5xl md:text-7xl text-[#1C2921] mb-8 tracking-tight">
               Get in Touch
             </h1>
-            <p className="text-[#EDE8DE]/70 text-lg font-light leading-relaxed text-pretty">
+            <p className="text-[#1C2921]/70 text-lg font-light leading-relaxed text-pretty">
               Whether you need help curating the perfect escape or have a question about an existing reservation, our concierge team is at your disposal.
             </p>
           </div>
@@ -35,35 +35,35 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="lg:col-span-7 bg-[#141A16] p-10 md:p-14 rounded-[2rem] border border-white/10 shadow-2xl"
+              className="lg:col-span-7 bg-white p-10 md:p-14 rounded-[2rem] border border-[#E2EAE3] shadow-2xl"
             >
-              <h2 className="font-serif text-3xl text-white mb-10">Send an Enquiry</h2>
+              <h2 className="font-serif text-3xl text-[#1C2921] mb-10">Send an Enquiry</h2>
               <form className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#EDE8DE]/60 mb-3">First Name</label>
-                    <input type="text" className="w-full bg-white/5 border border-white/10 px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-white/30" placeholder="John" />
+                    <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">First Name</label>
+                    <input type="text" className="w-full bg-white/5 border border-[#E2EAE3] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="John" />
                   </div>
                   <div>
-                    <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#EDE8DE]/60 mb-3">Last Name</label>
-                    <input type="text" className="w-full bg-white/5 border border-white/10 px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-white/30" placeholder="Doe" />
+                    <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">Last Name</label>
+                    <input type="text" className="w-full bg-white/5 border border-[#E2EAE3] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="Doe" />
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#EDE8DE]/60 mb-3">Email Address</label>
-                    <input type="email" className="w-full bg-white/5 border border-white/10 px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-white/30" placeholder="john@example.com" />
+                    <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">Email Address</label>
+                    <input type="email" className="w-full bg-white/5 border border-[#E2EAE3] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="john@example.com" />
                   </div>
                   <div>
-                    <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#EDE8DE]/60 mb-3">Phone Number</label>
-                    <input type="tel" className="w-full bg-white/5 border border-white/10 px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-white/30" placeholder="+91 98765 43210" />
+                    <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">Phone Number</label>
+                    <input type="tel" className="w-full bg-white/5 border border-[#E2EAE3] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="+91 98765 43210" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#EDE8DE]/60 mb-3">Message</label>
-                  <textarea rows={5} className="w-full bg-white/5 border border-white/10 px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl resize-none placeholder:text-white/30" placeholder="Tell us about your requirements..."></textarea>
+                  <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">Message</label>
+                  <textarea rows={5} className="w-full bg-white/5 border border-[#E2EAE3] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl resize-none placeholder:text-white/30" placeholder="Tell us about your requirements..."></textarea>
                 </div>
 
                 <button type="button" className="bg-gradient-to-r from-[#C9A96E] to-[#DFCAAB] text-[#080B09] px-10 py-5 rounded-full text-xs font-bold uppercase tracking-[0.15em] hover:shadow-[0_0_25px_rgba(201,169,110,0.5)] transition-all duration-300 w-full flex items-center justify-center gap-3">
@@ -79,12 +79,12 @@ export default function ContactPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="lg:col-span-5"
             >
-              <div className="bg-[#141A16] border border-white/10 text-white p-10 md:p-14 rounded-[2rem] shadow-2xl h-full relative overflow-hidden flex flex-col justify-between">
+              <div className="bg-white border border-[#E2EAE3] text-white p-10 md:p-14 rounded-[2rem] shadow-2xl h-full relative overflow-hidden flex flex-col justify-between">
                 {/* Decorative Pattern */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-bl-full pointer-events-none" />
                 
                 <div>
-                  <h3 className="font-serif text-3xl mb-12 relative z-10 text-white">Direct Contact</h3>
+                  <h3 className="font-serif text-3xl mb-12 relative z-10 text-[#1C2921]">Direct Contact</h3>
                   
                   <div className="space-y-12 relative z-10">
                     <div className="flex gap-6 group">
@@ -92,9 +92,9 @@ export default function ContactPage() {
                         <Phone className="w-5 h-5" />
                       </div>
                       <div className="pt-1">
-                        <h4 className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/50 mb-2">Concierge Desk</h4>
-                        <p className="font-serif text-2xl text-white">+91 98765 43210</p>
-                        <p className="text-xs text-white/50 mt-2 font-light">Available 9 AM to 8 PM IST</p>
+                        <h4 className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/50 mb-2">Concierge Desk</h4>
+                        <p className="font-serif text-2xl text-[#1C2921]">+91 98765 43210</p>
+                        <p className="text-xs text-[#1C2921]/50 mt-2 font-light">Available 9 AM to 8 PM IST</p>
                       </div>
                     </div>
 
@@ -103,9 +103,9 @@ export default function ContactPage() {
                         <Mail className="w-5 h-5" />
                       </div>
                       <div className="pt-1">
-                        <h4 className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/50 mb-2">Reservations</h4>
-                        <p className="font-serif text-xl text-white">hello@bungalowstay.com</p>
-                        <p className="text-xs text-white/50 mt-2 font-light">We aim to reply within 2 hours</p>
+                        <h4 className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/50 mb-2">Reservations</h4>
+                        <p className="font-serif text-xl text-[#1C2921]">hello@bungalowstay.com</p>
+                        <p className="text-xs text-[#1C2921]/50 mt-2 font-light">We aim to reply within 2 hours</p>
                       </div>
                     </div>
 
@@ -114,8 +114,8 @@ export default function ContactPage() {
                         <MapPin className="w-5 h-5" />
                       </div>
                       <div className="pt-1">
-                        <h4 className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/50 mb-2">Headquarters</h4>
-                        <p className="text-sm font-light leading-relaxed text-white/80">
+                        <h4 className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/50 mb-2">Headquarters</h4>
+                        <p className="text-sm font-light leading-relaxed text-[#1C2921]/80">
                           12th Floor, The Estate<br />
                           Bandra West, Mumbai 400050<br />
                           Maharashtra, India

@@ -34,21 +34,21 @@
   }
 }
 :root {
-  /* Luxury Obsidian & Champagne Palette */
-  --ivory: #0E1210;       /* Base deep obsidian-emerald dark background */
-  --cream: #141A16;       /* Slightly elevated card surface */
-  --beige: #222B24;       /* Subtle dark borders and divider lines */
-  --charcoal: #EDE8DE;    /* High contrast luminous ivory for typography */
-  --sage: #8EA093;        /* Soft sage accent */
-  --botanical: #C9A96E;   /* Primary champagne gold button/accent */
-  --forest: #080B09;      /* Deepest midnight tone for navigation/sections */
-  --gold: #C9A96E;        /* Radiant champagne gold */
-  --gold-light: #DFCAAB;  /* Soft shimmering warm gold */
-  --terracotta: #D9886C;  /* Warm accent */
-  --sand: #2C382F;        /* Elevated surface border */
+  /* Luxury Greenish-White Light Theme Palette */
+  --ivory: #F8FAF7;          /* Soft luminous herbal-tinted white base */
+  --cream: #FFFFFF;          /* Pure crisp white for elevated cards & sections */
+  --beige: #E2EAE3;          /* Delicate minty-sage border & dividers */
+  --charcoal: #1C2921;       /* Deep rich botanical forest green-black for ultra-crisp readable text */
+  --sage: #4E6B56;           /* Refined sage green for secondary labels & icons */
+  --botanical: #244833;      /* Signature deep emerald forest green */
+  --forest: #1A3626;         /* Deep lush botanical green for footers & accent hero strips */
+  --gold: #A88647;           /* Elegant warm antique gold accent */
+  --gold-light: #CDB788;     /* Soft warm champagne gold */
+  --terracotta: #C86D51;     /* Warm terracotta accent */
+  --sand: #ECF2ED;           /* Subtle greenish-white background pill/tag fill */
 
-  --background: #0A0D0B;
-  --foreground: #EDE8DE;
+  --background: #F8FAF7;     /* Luminous greenish white */
+  --foreground: #1C2921;     /* Deep crystal-clear botanical dark text */
 }
 
 /* Dark mode disabled for consistent premium editorial aesthetic */
@@ -103,31 +103,32 @@ html {
   outline-offset: 2px;
 }
 
-/* Luxury Dark Mode Glassmorphism & Glow Utilities */
+/* Luxury Greenish-White Mode Glassmorphism & Elevation Utilities */
 .glass-panel {
-  background: rgba(20, 26, 22, 0.7);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(201, 169, 110, 0.15);
+  border: 1px solid rgba(78, 107, 86, 0.15);
+  box-shadow: 0 10px 30px -5px rgba(28, 41, 33, 0.05);
 }
 
 .glass-panel-hover {
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .glass-panel-hover:hover {
-  background: rgba(26, 35, 29, 0.85);
-  border-color: rgba(201, 169, 110, 0.35);
-  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.7), 0 0 30px -5px rgba(201, 169, 110, 0.15);
+  background: #FFFFFF;
+  border-color: rgba(36, 72, 51, 0.3);
+  box-shadow: 0 20px 40px -10px rgba(28, 41, 33, 0.1), 0 0 25px -5px rgba(168, 134, 71, 0.15);
   transform: translateY(-4px);
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #FFF0DB 0%, #C9A96E 50%, #9F7B3E 100%);
+  background: linear-gradient(135deg, #244833 0%, #A88647 50%, #1A3626 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dark-gradient-bg {
-  background: radial-gradient(circle at 50% 0%, rgba(34, 43, 36, 0.5) 0%, rgba(10, 13, 11, 1) 100%);
+  background: radial-gradient(circle at 50% 0%, rgba(226, 234, 227, 0.8) 0%, rgba(248, 250, 247, 1) 100%);
 }
 

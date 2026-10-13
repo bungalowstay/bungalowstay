@@ -149,7 +149,7 @@ export default function ExperienceDetailPage() {
               <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-4 leading-tight">
                 {experience.title}
               </h1>
-              <p className="text-white/80 text-base md:text-xl font-light leading-relaxed">
+              <p className="text-[#1C2921]/80 text-base md:text-xl font-light leading-relaxed">
                 {experience.tagline}
               </p>
             </motion.div>
@@ -175,8 +175,8 @@ export default function ExperienceDetailPage() {
               </p>
             </div>
 
-            <div className="lg:col-span-5 bg-[#141A16] border border-white/10 p-8 rounded-3xl shadow-soft">
-              <h3 className="font-serif text-xl text-white mb-6 flex items-center gap-2">
+            <div className="lg:col-span-5 bg-white border border-[#E2EAE3] p-8 rounded-3xl shadow-soft">
+              <h3 className="font-serif text-xl text-[#1C2921] mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-gold" /> Collection Inclusions
               </h3>
               <ul className="space-y-4">
@@ -196,7 +196,7 @@ export default function ExperienceDetailPage() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold mb-2">Available Homes</p>
-              <h2 className="font-serif text-3xl md:text-5xl text-white">
+              <h2 className="font-serif text-3xl md:text-5xl text-[#1C2921]">
                 Handpicked Stays
               </h2>
             </div>
@@ -215,7 +215,7 @@ export default function ExperienceDetailPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 key={i}
-                className="group flex flex-col bg-[#141A16] border border-white/10 hover:border-gold/30 rounded-3xl overflow-hidden shadow-soft hover:shadow-2xl transition-all duration-500"
+                className="group flex flex-col bg-white border border-[#E2EAE3] hover:border-gold/30 rounded-3xl overflow-hidden shadow-soft hover:shadow-2xl transition-all duration-500"
               >
                 <Link href={`/bungalows/${prop.slug}`} className="relative aspect-[4/3] overflow-hidden block">
                   <Image
@@ -228,7 +228,7 @@ export default function ExperienceDetailPage() {
                   
                   <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                     {prop.tags.map(tag => (
-                      <span key={tag} className="bg-[#0E1210]/80 backdrop-blur-md text-gold text-[9px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold border border-gold/20 shadow-sm">
+                      <span key={tag} className="bg-white/80 backdrop-blur-md text-gold text-[9px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold border border-gold/20 shadow-sm">
                         {tag}
                       </span>
                     ))}
@@ -238,11 +238,11 @@ export default function ExperienceDetailPage() {
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex justify-between items-start mb-2">
                     <Link href={`/bungalows/${prop.slug}`}>
-                      <h3 className="font-serif text-2xl text-white group-hover:text-gold transition-colors">{prop.name}</h3>
+                      <h3 className="font-serif text-2xl text-[#1C2921] group-hover:text-gold transition-colors">{prop.name}</h3>
                     </Link>
                     <div className="flex items-center gap-1 mt-1">
                       <Star className="w-4 h-4 text-gold fill-gold" />
-                      <span className="text-sm font-bold text-white">{prop.rating}</span>
+                      <span className="text-sm font-bold text-[#1C2921]">{prop.rating}</span>
                     </div>
                   </div>
 
@@ -255,10 +255,10 @@ export default function ExperienceDetailPage() {
                     <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-gold" /> {prop.beds} Bedrooms</span>
                   </div>
 
-                  <div className="mt-auto flex items-center justify-between pt-5 border-t border-white/10">
+                  <div className="mt-auto flex items-center justify-between pt-5 border-t border-[#E2EAE3]">
                     <div>
                       <p className="text-[10px] font-bold uppercase tracking-widest text-gold mb-1">From</p>
-                      <p className="font-serif text-xl text-white tracking-tight">₹{prop.price} <span className="text-xs font-sans font-normal text-white/50 tracking-widest uppercase">/ Night</span></p>
+                      <p className="font-serif text-xl text-[#1C2921] tracking-tight">₹{prop.price} <span className="text-xs font-sans font-normal text-[#1C2921]/50 tracking-widest uppercase">/ Night</span></p>
                     </div>
                     <Link
                       href={`/bungalows/${prop.slug}`}
@@ -275,10 +275,10 @@ export default function ExperienceDetailPage() {
 
         {/* Concierge Booking Banner */}
         <section className="container mx-auto px-6 lg:px-12">
-          <div className="bg-[#141A16] border border-white/10 rounded-3xl p-10 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+          <div className="bg-white border border-[#E2EAE3] rounded-3xl p-10 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
             <div className="max-w-xl">
               <p className="text-gold text-[10px] font-bold uppercase tracking-[0.25em] mb-3">Private Concierge</p>
-              <h3 className="font-serif text-3xl md:text-4xl text-white mb-4">Need help choosing your stay?</h3>
+              <h3 className="font-serif text-3xl md:text-4xl text-[#1C2921] mb-4">Need help choosing your stay?</h3>
               <p className="text-charcoal/70 text-sm md:text-base font-light leading-relaxed">
                 Our bespoke travel curators can handpick estates matching your exact group size, dietary preferences, and travel dates.
               </p>

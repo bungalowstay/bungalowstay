@@ -17,9 +17,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           {
             "bg-gold text-forest font-semibold hover:bg-gold-light hover:shadow-[0_0_20px_rgba(201,169,110,0.4)] transition-all duration-300": variant === "default",
             "bg-botanical text-forest font-semibold hover:bg-gold-light transition-all duration-300": variant === "primary",
-            "bg-[#141A16] text-charcoal border border-beige hover:border-gold/50 transition-all duration-300": variant === "secondary",
+            "bg-white text-charcoal border border-beige hover:border-gold/50 transition-all duration-300": variant === "secondary",
             "border border-gold/40 text-charcoal bg-transparent hover:bg-gold/10 hover:border-gold transition-all duration-300": variant === "outline",
-            "text-charcoal hover:bg-white/5 transition-all duration-300": variant === "ghost",
+            "text-charcoal hover:bg-[#F0F5F1] transition-all duration-300": variant === "ghost",
             "text-gold underline-offset-4 hover:underline transition-colors": variant === "link",
             
             "h-10 px-6 py-2": size === "default",

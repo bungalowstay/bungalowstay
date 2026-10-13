@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 export default function AboutPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-[#EDE8DE]">
+    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -29,11 +29,11 @@ export default function AboutPage() {
                   Our Philosophy
                 </p>
               </div>
-              <h1 className="font-serif text-5xl lg:text-[5.5rem] leading-[1.1] tracking-tight mb-8 text-white">
+              <h1 className="font-serif text-5xl lg:text-[5.5rem] leading-[1.1] tracking-tight mb-8 text-[#1C2921]">
                 Redefining <br/>
                 <span className="italic font-light gold-gradient-text">Luxury Stays</span>
               </h1>
-              <p className="text-lg text-[#EDE8DE]/70 leading-relaxed mb-10 max-w-lg font-light text-pretty">
+              <p className="text-lg text-[#1C2921]/70 leading-relaxed mb-10 max-w-lg font-light text-pretty">
                 Bungalow Stay was born from a simple belief: the best travel memories are made in spaces that feel both extraordinary and entirely your own. We curate India's finest independent homes for travelers who expect impeccable design and intuitive service.
               </p>
               <Link 
@@ -51,7 +51,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="lg:w-1/2 w-full aspect-[4/5] relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10"
+              className="lg:w-1/2 w-full aspect-[4/5] relative rounded-[2rem] overflow-hidden shadow-2xl border border-[#E2EAE3]"
             >
               <Image 
                 src="https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=1200&auto=format&fit=crop" 
@@ -65,7 +65,7 @@ export default function AboutPage() {
         </section>
 
         {/* STATS STRIP */}
-        <section className="py-16 bg-[#080B09] text-white border-y border-white/10">
+        <section className="py-16 bg-[#080B09] text-white border-y border-[#E2EAE3]">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 divide-x divide-white/10">
               {[
@@ -76,7 +76,7 @@ export default function AboutPage() {
               ].map((stat, i) => (
                 <div key={i} className="text-center px-4">
                   <p className="font-serif text-4xl lg:text-5xl text-gold mb-2">{stat.value}</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-white/60">{stat.label}</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-[#1C2921]/60">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
         </section>
 
         {/* OUR VALUES */}
-        <section className="bg-[#0E1210] py-32 relative overflow-hidden">
+        <section className="bg-white py-32 relative overflow-hidden">
           <div className="container mx-auto px-6 lg:px-12 relative z-10">
             <div className="text-center mb-24 max-w-2xl mx-auto">
               <div className="flex items-center justify-center gap-4 mb-6">
@@ -92,8 +92,8 @@ export default function AboutPage() {
                 <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">The Standard</p>
                 <div className="h-[1px] w-8 bg-gold" />
               </div>
-              <h2 className="font-serif text-4xl lg:text-5xl mb-6 text-white">The Bungalow Stay Promise</h2>
-              <p className="text-[#EDE8DE]/60 leading-relaxed font-light text-lg">Every property in our collection is rigorously inspected against our unyielding 150-point luxury standard.</p>
+              <h2 className="font-serif text-4xl lg:text-5xl mb-6 text-[#1C2921]">The Bungalow Stay Promise</h2>
+              <p className="text-[#1C2921]/60 leading-relaxed font-light text-lg">Every property in our collection is rigorously inspected against our unyielding 150-point luxury standard.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
@@ -103,7 +103,7 @@ export default function AboutPage() {
                 { title: "Absolute Privacy", desc: "Your own private oasis. No shared lobbies, no crowded pools. Just perfect seclusion.", icon: ShieldCheck, num: "03" },
                 { title: "Hotel-Grade Quality", desc: "Crisp 400-thread count linens, premium amenities, and immaculate hygiene standards.", icon: Sparkles, num: "04" },
               ].map((val, i) => (
-                <div key={i} className="bg-[#141A16] border border-white/5 p-10 rounded-[2rem] shadow-xl hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
+                <div key={i} className="bg-white border border-[#E2EAE3] p-10 rounded-[2rem] shadow-xl hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
                   <div className="absolute -right-4 -top-4 text-[120px] font-serif text-white/[0.03] leading-none select-none z-0">
                     {val.num}
                   </div>
@@ -111,8 +111,8 @@ export default function AboutPage() {
                     <div className="w-14 h-14 rounded-full border border-gold/40 bg-gold/10 flex items-center justify-center mb-8 text-gold group-hover:bg-gold group-hover:text-[#080B09] transition-colors">
                       <val.icon className="w-6 h-6 stroke-[1.5]" />
                     </div>
-                    <h3 className="font-serif text-2xl mb-4 text-white">{val.title}</h3>
-                    <p className="text-sm text-[#EDE8DE]/70 leading-relaxed font-light">{val.desc}</p>
+                    <h3 className="font-serif text-2xl mb-4 text-[#1C2921]">{val.title}</h3>
+                    <p className="text-sm text-[#1C2921]/70 leading-relaxed font-light">{val.desc}</p>
                   </div>
                 </div>
               ))}
@@ -121,9 +121,9 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-32 bg-[#0A0D0B] text-center">
+        <section className="py-32 bg-[#F8FAF7] text-center">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-3xl">
-            <h2 className="font-serif text-4xl lg:text-6xl text-white mb-8 text-balance">
+            <h2 className="font-serif text-4xl lg:text-6xl text-[#1C2921] mb-8 text-balance">
               Experience the difference for yourself.
             </h2>
             <Link 

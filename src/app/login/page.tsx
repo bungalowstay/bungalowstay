@@ -6,14 +6,14 @@ import Link from "next/link"
 
 export default function LoginPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-charcoal">
       <Header />
       
-      <main className="flex flex-1 items-center justify-center bg-radial-[circle_at_center,_var(--tw-gradient-stops)] from-[#141A16] to-[#0A0D0B] py-20 px-4">
-        <div className="w-full max-w-md rounded-3xl border border-white/10 bg-[#141A16] p-8 lg:p-10 shadow-2xl">
+      <main className="flex flex-1 items-center justify-center bg-radial-[circle_at_center,_var(--tw-gradient-stops)] from-[#F0F5F1] to-[#F8FAF7] py-20 px-4">
+        <div className="w-full max-w-md rounded-3xl border border-[#E2EAE3] bg-white p-8 lg:p-10 shadow-2xl">
           <div className="mb-8 text-center">
             <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold block mb-2">Private Access</span>
-            <h1 className="font-serif text-3xl text-white">Welcome back</h1>
+            <h1 className="font-serif text-3xl text-[#1C2921]">Welcome back</h1>
             <p className="mt-2 text-sm text-charcoal/70">Sign in to manage your bookings and wishlists</p>
           </div>
           
@@ -39,12 +39,12 @@ export default function LoginPage() {
           </form>
           
           <div className="my-6 flex items-center">
-            <div className="flex-1 border-t border-white/10"></div>
+            <div className="flex-1 border-t border-[#E2EAE3]"></div>
             <span className="mx-4 text-xs font-medium uppercase tracking-wider text-charcoal/40">Or continue with</span>
-            <div className="flex-1 border-t border-white/10"></div>
+            <div className="flex-1 border-t border-[#E2EAE3]"></div>
           </div>
           
-          <Button variant="outline" className="w-full rounded-full border-white/10 text-white hover:bg-white/5">
+          <Button variant="outline" className="w-full rounded-full border-[#E2EAE3] text-[#1C2921] hover:bg-[#F0F5F1]">
             <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24">
               <path
                 d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
