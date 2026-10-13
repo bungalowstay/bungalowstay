@@ -67,38 +67,38 @@ export function Header({ className, theme = "transparent" }: { className?: strin
           className ? className : ""
         )}
       >
-        <div className="container mx-auto flex items-center justify-between px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
           
-          {/* LOGO (Enlarged, Highlighted Luxury Badge, Strictly Visible) */}
-          <Link href="/" className="flex items-center group relative z-50">
-            <div className="flex items-center gap-3 bg-white/95 px-4 py-2 sm:px-5 sm:py-2.5 rounded-2xl border border-[#244833]/20 shadow-[0_6px_25px_rgba(36,72,51,0.12)] transition-all duration-300 group-hover:shadow-[0_10px_35px_rgba(36,72,51,0.22)] group-hover:scale-105 group-hover:border-[#244833]/40">
-              <div className="relative h-14 w-14 sm:h-16 sm:w-16 flex-shrink-0">
+          {/* LOGO (Properly Sized & Aligned Luxury Badge) */}
+          <Link href="/" className="flex items-center group relative z-50 flex-shrink-0">
+            <div className="flex items-center gap-2.5 sm:gap-3 bg-white/95 px-3 py-1.5 sm:px-4 sm:py-2 rounded-2xl border border-[#244833]/20 shadow-[0_4px_16px_rgba(36,72,51,0.08)] transition-all duration-300 group-hover:shadow-[0_8px_25px_rgba(36,72,51,0.18)] group-hover:scale-105 group-hover:border-[#244833]/40">
+              <div className="relative h-10 w-10 sm:h-12 sm:w-12 flex-shrink-0">
                 <Image 
                   src="/logo.png" 
                   alt="Bungalow Stay Logo" 
                   fill
-                  className="object-contain drop-shadow-md"
+                  className="object-contain drop-shadow-sm"
                   priority
                 />
               </div>
-              <div className="flex flex-col text-left pr-2">
-                <span className="font-serif text-lg sm:text-xl lg:text-2xl font-bold tracking-[0.06em] text-[#244833] leading-none">
+              <div className="flex flex-col text-left">
+                <span className="font-serif text-base sm:text-lg font-bold tracking-[0.06em] text-[#244833] leading-none whitespace-nowrap">
                   BUNGALOW STAY
                 </span>
-                <span className="text-[9px] sm:text-[10px] tracking-[0.28em] uppercase font-bold text-[#A88647] mt-1">
+                <span className="text-[8px] sm:text-[9px] tracking-[0.25em] uppercase font-bold text-[#A88647] mt-1 whitespace-nowrap">
                   Luxury Sanctuaries
                 </span>
               </div>
             </div>
           </Link>
 
-          {/* DESKTOP NAVIGATION (High Contrast & Crystal Clear) */}
-          <nav className="hidden items-center gap-10 lg:flex">
+          {/* DESKTOP NAVIGATION (Centered, Balanced Spacing, No Wrap) */}
+          <nav className="hidden items-center gap-6 xl:gap-8 lg:flex mx-4">
             {navLinks.map((link) => (
               <Link 
                 key={link.name}
                 href={link.href} 
-                className="text-[12px] uppercase tracking-[0.2em] font-semibold text-[#1C2921] hover:text-[#244833] transition-colors relative group py-1"
+                className="text-[11px] xl:text-[12px] uppercase tracking-[0.18em] font-semibold text-[#1C2921] hover:text-[#244833] transition-colors relative group py-1 whitespace-nowrap"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-[#244833] transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
@@ -106,11 +106,11 @@ export function Header({ className, theme = "transparent" }: { className?: strin
             ))}
           </nav>
 
-          {/* ACTIONS */}
-          <div className="flex items-center gap-6 relative z-50">
+          {/* ACTIONS (Properly Aligned & Flex-Shrink-0) */}
+          <div className="flex items-center gap-3 sm:gap-4 relative z-50 flex-shrink-0">
             <Link 
               href="/bungalows"
-              className="hidden lg:flex items-center justify-center w-11 h-11 rounded-full border border-[#244833]/25 text-[#1C2921] hover:border-[#244833] hover:text-[#244833] hover:bg-[#244833]/10 transition-all duration-300 shadow-sm"
+              className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-[#244833]/25 text-[#1C2921] hover:border-[#244833] hover:text-[#244833] hover:bg-[#244833]/10 transition-all duration-300 shadow-sm"
               aria-label="Search"
             >
               <Search className="h-4 w-4" />
@@ -118,15 +118,16 @@ export function Header({ className, theme = "transparent" }: { className?: strin
             
             <Link 
               href="/bungalows" 
-              className="hidden px-8 py-3.5 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 lg:block bg-gradient-to-r from-[#244833] to-[#1A3626] text-white shadow-[0_6px_20px_rgba(36,72,51,0.25)] hover:shadow-[0_10px_30px_rgba(36,72,51,0.4)] hover:scale-[1.02] active:scale-[0.98]"
+              className="hidden lg:inline-flex items-center justify-center px-6 py-2.5 xl:px-7 xl:py-3 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 bg-gradient-to-r from-[#244833] to-[#1A3626] text-white shadow-[0_4px_14px_rgba(36,72,51,0.22)] hover:shadow-[0_8px_20px_rgba(36,72,51,0.35)] hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
             >
               Reserve Now
             </Link>
 
             {/* MOBILE MENU TOGGLE */}
             <button 
-              className="lg:hidden flex items-center justify-center w-12 h-12 rounded-full border border-[#244833]/25 text-[#1C2921] bg-white/80 backdrop-blur-md hover:border-[#244833] transition-colors shadow-sm"
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-[#244833]/25 text-[#1C2921] bg-white/90 backdrop-blur-md hover:border-[#244833] transition-colors shadow-sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle Menu"
             >
               <Menu className="h-5 w-5" />
             </button>
