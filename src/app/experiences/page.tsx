@@ -17,7 +17,7 @@ export default function ExperiencesPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col bg-ivory text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-[#EDE8DE]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -34,10 +34,10 @@ export default function ExperiencesPage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">The Collections</p>
               <div className="h-[1px] w-12 bg-gold" />
             </div>
-            <h1 className="font-serif text-5xl md:text-7xl text-charcoal mb-8 tracking-tight">
+            <h1 className="font-serif text-5xl md:text-7xl text-white mb-8 tracking-tight">
               Journeys by Design
             </h1>
-            <p className="text-charcoal/70 text-lg md:text-xl font-light leading-relaxed text-balance">
+            <p className="text-[#EDE8DE]/70 text-lg md:text-xl font-light leading-relaxed text-balance">
               Whether seeking absolute solitude, architectural brilliance, or spaces for grand celebrations, find the perfect canvas for your next escape.
             </p>
           </motion.div>
@@ -52,35 +52,35 @@ export default function ExperiencesPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: i * 0.1 }}
                 key={i} 
-                className={`flex flex-col lg:flex-row gap-10 items-center ${i % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
+                className={`flex flex-col lg:flex-row gap-10 items-center p-8 lg:p-10 rounded-[2.5rem] bg-[#141A16]/80 border border-white/5 hover:border-gold/30 transition-all duration-500 ${i % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
               >
                 {/* Image */}
                 <Link href={`/experiences/${exp.title.toLowerCase().replace(/ /g, '-')}`} className="w-full lg:w-3/5 group relative">
-                  <div className="relative aspect-[16/9] lg:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-float">
+                  <div className="relative aspect-[16/9] lg:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
                     <Image 
                       src={exp.img} 
                       alt={exp.title} 
                       fill 
                       className="object-cover transition-transform duration-1000 group-hover:scale-105" 
                     />
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent group-hover:opacity-40 transition-opacity duration-500" />
                   </div>
                 </Link>
 
                 {/* Content */}
-                <div className={`w-full lg:w-2/5 flex flex-col justify-center ${i % 2 !== 0 ? 'lg:pl-0 lg:pr-12' : 'lg:pl-12 lg:pr-0'}`}>
-                  <div className="w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold mb-8">
+                <div className={`w-full lg:w-2/5 flex flex-col justify-center ${i % 2 !== 0 ? 'lg:pl-0 lg:pr-6' : 'lg:pl-6 lg:pr-0'}`}>
+                  <div className="w-12 h-12 rounded-full border border-gold/40 bg-gold/10 flex items-center justify-center text-gold mb-8">
                     <Star className="w-5 h-5 stroke-[1.5]" />
                   </div>
-                  <h2 className="font-serif text-4xl lg:text-5xl text-charcoal mb-6">{exp.title}</h2>
-                  <p className="text-charcoal/70 text-lg font-light leading-relaxed mb-10 text-pretty">
+                  <h2 className="font-serif text-4xl lg:text-5xl text-white mb-6">{exp.title}</h2>
+                  <p className="text-[#EDE8DE]/70 text-lg font-light leading-relaxed mb-10 text-pretty">
                     {exp.sub}
                   </p>
                   <Link 
                     href={`/experiences/${exp.title.toLowerCase().replace(/ /g, '-')}`} 
-                    className="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.15em] text-charcoal hover:text-gold transition-colors group"
+                    className="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.15em] text-gold hover:text-white transition-colors group"
                   >
-                    <span className="flex h-12 w-12 items-center justify-center rounded-full border border-beige group-hover:border-gold transition-colors">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/40 group-hover:border-gold group-hover:bg-gold group-hover:text-[#080B09] transition-all">
                       <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                     </span>
                     View Collection

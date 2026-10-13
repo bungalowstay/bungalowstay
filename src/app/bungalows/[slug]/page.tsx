@@ -26,7 +26,7 @@ export default function PropertyDetailPage() {
   }, [])
 
   return (
-    <div className="flex min-h-screen flex-col bg-ivory selection:bg-charcoal selection:text-ivory">
+    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-charcoal selection:bg-gold selection:text-forest">
       {/* Absolute header for cinematic gallery hero */}
       <Header className="absolute top-0 w-full z-50 bg-transparent border-none text-white [&_a]:text-white [&_span]:text-white" />
       
@@ -35,18 +35,18 @@ export default function PropertyDetailPage() {
         initial={{ y: -100 }}
         animate={{ y: showSubNav ? 0 : -100 }}
         transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-0 left-0 right-0 z-40 bg-ivory/90 backdrop-blur-xl border-b border-charcoal/5 hidden md:block pt-4"
+        className="fixed top-0 left-0 right-0 z-40 bg-[#0E1210]/95 backdrop-blur-xl border-b border-white/10 hidden md:block pt-4 shadow-2xl"
       >
         <div className="container mx-auto px-12 flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
-            <span className="font-serif text-xl">The Glasshouse</span>
-            <div className="h-4 w-px bg-charcoal/20" />
+            <span className="font-serif text-xl text-white">The Glasshouse</span>
+            <div className="h-4 w-px bg-white/20" />
             <nav className="flex gap-6">
               {['Overview', 'Amenities', 'Spaces', 'Host'].map(item => (
                 <button 
                   key={item}
                   onClick={() => setActiveSection(item.toLowerCase())}
-                  className={`text-[10px] font-bold uppercase tracking-[0.15em] transition-colors ${activeSection === item.toLowerCase() ? 'text-charcoal border-b border-charcoal pb-1' : 'text-charcoal/40 hover:text-charcoal'}`}
+                  className={`text-[10px] font-bold uppercase tracking-[0.15em] transition-colors ${activeSection === item.toLowerCase() ? 'text-gold border-b-2 border-gold pb-1' : 'text-white/60 hover:text-white'}`}
                 >
                   {item}
                 </button>
@@ -54,10 +54,10 @@ export default function PropertyDetailPage() {
             </nav>
           </div>
           <div className="flex items-center gap-6">
-            <span className="font-serif text-lg">₹25,000 <span className="text-sm font-sans text-charcoal/50">/ night</span></span>
-            <button className="bg-charcoal text-ivory px-6 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-charcoal/90 transition-colors">
+            <span className="font-serif text-lg text-white">₹25,000 <span className="text-sm font-sans text-white/50">/ night</span></span>
+            <Link href="/checkout" className="bg-gradient-to-r from-gold to-gold-light text-forest font-semibold px-6 py-2.5 text-[10px] uppercase tracking-[0.2em] rounded-full hover:shadow-[0_0_25px_rgba(201,169,110,0.5)] transition-all">
               Reserve
-            </button>
+            </Link>
           </div>
         </div>
       </motion.div>
@@ -127,16 +127,16 @@ export default function PropertyDetailPage() {
             <div className="space-y-24">
               
               {/* Title & Basics */}
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-b border-charcoal/10 pb-16">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-b border-white/10 pb-16">
                 <div className="flex justify-between items-start mb-10">
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-charcoal/50 mb-4">Private Villa</p>
-                    <h1 className="font-serif text-5xl md:text-6xl text-charcoal mb-4">The Glasshouse</h1>
-                    <p className="text-lg text-charcoal/70 font-serif italic">Lonavala, Maharashtra</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4">Private Villa</p>
+                    <h1 className="font-serif text-5xl md:text-6xl text-white mb-4">The Glasshouse</h1>
+                    <p className="text-lg text-white/70 font-serif italic">Lonavala, Maharashtra</p>
                   </div>
                 </div>
                 
-                <div className="flex flex-wrap gap-x-12 gap-y-6 text-[11px] font-bold tracking-[0.1em] text-charcoal uppercase">
+                <div className="flex flex-wrap gap-x-12 gap-y-6 text-[11px] font-bold tracking-[0.1em] text-gold uppercase">
                   <span>12 Guests</span>
                   <span>4 Bedrooms</span>
                   <span>5 Beds</span>
@@ -147,8 +147,8 @@ export default function PropertyDetailPage() {
 
               {/* The Story */}
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                <h2 className="font-serif text-3xl mb-8">The Architecture</h2>
-                <div className="prose prose-lg text-charcoal/70 font-sans leading-[1.8] max-w-3xl">
+                <h2 className="font-serif text-3xl mb-8 text-white">The Architecture</h2>
+                <div className="prose prose-lg text-charcoal/80 font-sans leading-[1.8] max-w-3xl font-light">
                   <p>
                     Set above the quiet green folds of the Western Ghats, the house opens onto a private terrace where mornings begin slowly. The Glasshouse is a masterclass in tropical modernism, blending raw concrete, warm local timber, and vast expanses of glass to erase the boundary between indoors and the surrounding rainforest.
                   </p>
@@ -159,8 +159,8 @@ export default function PropertyDetailPage() {
               </motion.div>
 
               {/* Spaces / Rooms Gallery */}
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-t border-charcoal/10 pt-20">
-                <h2 className="font-serif text-3xl mb-12">The Spaces</h2>
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-t border-white/10 pt-20">
+                <h2 className="font-serif text-3xl mb-12 text-white">The Spaces</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div className="group cursor-pointer">
                     <div className="relative aspect-[4/3] overflow-hidden mb-4 bg-stone">
@@ -180,18 +180,18 @@ export default function PropertyDetailPage() {
               </motion.div>
 
               {/* Meet the Host */}
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-y border-charcoal/10 py-20 my-20">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-y border-white/10 py-20 my-20">
                 <div className="flex flex-col md:flex-row gap-12 items-center md:items-start">
-                  <div className="w-32 h-32 rounded-full overflow-hidden relative shrink-0">
+                  <div className="w-32 h-32 rounded-full overflow-hidden relative shrink-0 border-2 border-gold/40">
                     <Image src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Host" fill className="object-cover" />
                   </div>
                   <div>
-                    <h2 className="font-serif text-3xl mb-4">Hosted by Elena</h2>
-                    <p className="text-sm text-charcoal/50 uppercase tracking-widest font-bold mb-6">Superhost · 5 Years Hosting</p>
-                    <p className="text-charcoal/70 leading-relaxed max-w-2xl">
+                    <h2 className="font-serif text-3xl mb-4 text-white">Hosted by Elena</h2>
+                    <p className="text-sm text-gold uppercase tracking-widest font-bold mb-6">Superhost · 5 Years Hosting</p>
+                    <p className="text-charcoal/80 leading-relaxed max-w-2xl font-light">
                       "I built The Glasshouse as a personal sanctuary away from the chaos of Mumbai. My team and I are dedicated to ensuring your stay is completely frictionless, offering absolute privacy alongside anticipatory service. We can arrange private chefs, yoga instructors, or guided treks upon request."
                     </p>
-                    <button className="mt-8 border border-charcoal px-8 py-3 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-charcoal hover:text-ivory transition-colors">
+                    <button className="mt-8 border border-gold/40 px-8 py-3 text-[10px] font-bold uppercase tracking-[0.2em] text-gold hover:bg-gold hover:text-forest transition-colors rounded-full">
                       Contact Host
                     </button>
                   </div>
@@ -200,40 +200,40 @@ export default function PropertyDetailPage() {
 
             </div>
 
-            {/* Sticky Booking Panel (Ultra-Premium) */}
+            {/* Sticky Booking Panel (Ultra-Premium Dark Glass) */}
             <div className="relative hidden lg:block">
               <motion.div 
                 initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, delay: 0.5 }}
-                className="sticky top-40 bg-white p-10 shadow-[0_30px_100px_-20px_rgba(0,0,0,0.08)]"
+                className="sticky top-40 bg-[#141A16] border border-white/10 rounded-3xl p-10 shadow-[0_30px_100px_-20px_rgba(0,0,0,0.8)]"
               >
-                <div className="flex justify-between items-end mb-10 border-b border-charcoal/10 pb-8">
+                <div className="flex justify-between items-end mb-10 border-b border-white/10 pb-8">
                   <div>
-                    <span className="font-serif text-4xl text-charcoal">₹25,000</span>
-                    <span className="text-charcoal/40 ml-2 text-sm tracking-wide">/ night</span>
+                    <span className="font-serif text-4xl text-white">₹25,000</span>
+                    <span className="text-white/40 ml-2 text-sm tracking-wide">/ night</span>
                   </div>
                 </div>
 
-                <div className="border border-charcoal/20 mb-8 bg-ivory/30">
-                  <div className="flex border-b border-charcoal/20">
-                    <div className="flex-1 p-4 border-r border-charcoal/20 cursor-pointer hover:bg-ivory transition-colors">
-                      <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-charcoal/50 mb-2">Check-in</label>
-                      <div className="text-sm">Add date</div>
+                <div className="border border-white/10 rounded-2xl mb-8 bg-[#0E1210]/60 overflow-hidden">
+                  <div className="flex border-b border-white/10">
+                    <div className="flex-1 p-4 border-r border-white/10 cursor-pointer hover:bg-white/5 transition-colors">
+                      <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-2">Check-in</label>
+                      <div className="text-sm text-white">Add date</div>
                     </div>
-                    <div className="flex-1 p-4 cursor-pointer hover:bg-ivory transition-colors">
-                      <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-charcoal/50 mb-2">Check-out</label>
-                      <div className="text-sm">Add date</div>
+                    <div className="flex-1 p-4 cursor-pointer hover:bg-white/5 transition-colors">
+                      <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-2">Check-out</label>
+                      <div className="text-sm text-white">Add date</div>
                     </div>
                   </div>
-                  <div className="p-4 cursor-pointer hover:bg-ivory transition-colors">
-                    <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-charcoal/50 mb-2">Guests</label>
-                    <div className="text-sm">2 Guests</div>
+                  <div className="p-4 cursor-pointer hover:bg-white/5 transition-colors">
+                    <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-2">Guests</label>
+                    <div className="text-sm text-white">2 Guests</div>
                   </div>
                 </div>
 
-                <Link href="/checkout" className="flex w-full items-center justify-center bg-charcoal py-5 text-[11px] font-bold uppercase tracking-[0.2em] text-ivory hover:bg-charcoal/90 transition-colors">
+                <Link href="/checkout" className="flex w-full items-center justify-center bg-gradient-to-r from-gold to-gold-light py-5 text-[11px] font-bold uppercase tracking-[0.2em] text-forest rounded-full hover:shadow-[0_0_30px_rgba(201,169,110,0.6)] transition-all">
                   Reserve
                 </Link>
-                <p className="text-center text-xs text-charcoal/40 mt-6 font-serif italic">You won't be charged yet</p>
+                <p className="text-center text-xs text-white/40 mt-6 font-serif italic">You won't be charged yet</p>
 
               </motion.div>
             </div>

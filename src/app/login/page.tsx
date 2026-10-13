@@ -6,44 +6,45 @@ import Link from "next/link"
 
 export default function LoginPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <Header theme="light" />
+    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-charcoal">
+      <Header />
       
-      <main className="flex flex-1 items-center justify-center bg-sand/10 py-12 px-4">
-        <div className="w-full max-w-md rounded-2xl border border-sand/50 bg-ivory p-8 shadow-sm">
+      <main className="flex flex-1 items-center justify-center bg-radial-[circle_at_center,_var(--tw-gradient-stops)] from-[#141A16] to-[#0A0D0B] py-20 px-4">
+        <div className="w-full max-w-md rounded-3xl border border-white/10 bg-[#141A16] p-8 lg:p-10 shadow-2xl">
           <div className="mb-8 text-center">
-            <h1 className="font-serif text-3xl">Welcome back</h1>
+            <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold block mb-2">Private Access</span>
+            <h1 className="font-serif text-3xl text-white">Welcome back</h1>
             <p className="mt-2 text-sm text-charcoal/70">Sign in to manage your bookings and wishlists</p>
           </div>
           
-          <form className="space-y-4">
+          <form className="space-y-5">
             <div>
-              <label className="mb-2 block text-sm font-medium">Email address</label>
-              <Input type="email" placeholder="name@example.com" className="bg-white" />
+              <label className="mb-2 block text-xs uppercase tracking-wider text-charcoal/80 font-bold">Email address</label>
+              <Input type="email" placeholder="name@example.com" />
             </div>
             
             <div>
               <div className="mb-2 flex items-center justify-between">
-                <label className="text-sm font-medium">Password</label>
-                <Link href="/forgot-password" className="text-xs font-medium text-charcoal hover:underline">
+                <label className="text-xs uppercase tracking-wider text-charcoal/80 font-bold">Password</label>
+                <Link href="/forgot-password" className="text-xs font-medium text-gold hover:underline">
                   Forgot password?
                 </Link>
               </div>
-              <Input type="password" placeholder="••••••••" className="bg-white" />
+              <Input type="password" placeholder="••••••••" />
             </div>
             
-            <Button variant="primary" className="mt-6 w-full">
+            <Button variant="default" className="mt-6 w-full rounded-full py-3.5">
               Sign in
             </Button>
           </form>
           
           <div className="my-6 flex items-center">
-            <div className="flex-1 border-t border-sand/50"></div>
-            <span className="mx-4 text-xs font-medium uppercase text-charcoal/40">Or continue with</span>
-            <div className="flex-1 border-t border-sand/50"></div>
+            <div className="flex-1 border-t border-white/10"></div>
+            <span className="mx-4 text-xs font-medium uppercase tracking-wider text-charcoal/40">Or continue with</span>
+            <div className="flex-1 border-t border-white/10"></div>
           </div>
           
-          <Button variant="outline" className="w-full">
+          <Button variant="outline" className="w-full rounded-full border-white/10 text-white hover:bg-white/5">
             <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24">
               <path
                 d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -67,7 +68,7 @@ export default function LoginPage() {
           
           <p className="mt-8 text-center text-sm text-charcoal/70">
             Don't have an account?{" "}
-            <Link href="/register" className="font-medium text-charcoal hover:underline">
+            <Link href="/register" className="font-medium text-gold hover:underline">
               Sign up
             </Link>
           </p>

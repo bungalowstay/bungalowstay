@@ -170,33 +170,33 @@ export default function DestinationDetailPage() {
 
         {/* Destination Facts Strip */}
         <section className="container mx-auto px-6 lg:px-12 mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white border border-beige p-8 rounded-3xl shadow-soft">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-[#141A16] border border-white/10 p-8 rounded-3xl shadow-soft">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-ivory flex items-center justify-center text-gold">
+              <div className="w-12 h-12 rounded-2xl bg-[#0E1210] border border-white/10 flex items-center justify-center text-gold">
                 <Calendar className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-[10px] uppercase font-bold tracking-widest text-charcoal/50">Best Time to Visit</p>
-                <p className="font-serif text-lg text-charcoal font-bold">{dest.bestSeason}</p>
+                <p className="text-[10px] uppercase font-bold tracking-widest text-gold mb-1">Best Time to Visit</p>
+                <p className="font-serif text-lg text-white font-bold">{dest.bestSeason}</p>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-ivory flex items-center justify-center text-gold">
+              <div className="w-12 h-12 rounded-2xl bg-[#0E1210] border border-white/10 flex items-center justify-center text-gold">
                 <Thermometer className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-[10px] uppercase font-bold tracking-widest text-charcoal/50">Climate</p>
-                <p className="font-serif text-lg text-charcoal font-bold">{dest.climate}</p>
+                <p className="text-[10px] uppercase font-bold tracking-widest text-gold mb-1">Climate</p>
+                <p className="font-serif text-lg text-white font-bold">{dest.climate}</p>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-ivory flex items-center justify-center text-gold">
+              <div className="w-12 h-12 rounded-2xl bg-[#0E1210] border border-white/10 flex items-center justify-center text-gold">
                 <Compass className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-[10px] uppercase font-bold tracking-widest text-charcoal/50">Getting There</p>
+                <p className="text-[10px] uppercase font-bold tracking-widest text-gold mb-1">Getting There</p>
                 <p className="text-xs text-charcoal/80 leading-snug">{dest.travelTip}</p>
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function DestinationDetailPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 key={i}
-                className="group flex flex-col bg-white border border-beige rounded-2xl overflow-hidden shadow-soft hover:shadow-float transition-all duration-500"
+                className="group flex flex-col bg-[#141A16] border border-white/10 hover:border-gold/40 rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_20px_40px_rgba(0,0,0,0.7)] transition-all duration-500"
               >
                 <Link href={`/bungalows/${prop.slug}`} className="relative aspect-[4/3] overflow-hidden block">
                   <Image
@@ -248,11 +248,11 @@ export default function DestinationDetailPage() {
                     fill
                     className="object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   
                   <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                     {prop.tags.map(tag => (
-                      <span key={tag} className="bg-white/90 backdrop-blur-md text-charcoal text-[9px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold shadow-sm">
+                      <span key={tag} className="bg-[#0E1210]/80 backdrop-blur-md text-gold text-[9px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold border border-gold/20 shadow-sm">
                         {tag}
                       </span>
                     ))}
@@ -262,16 +262,16 @@ export default function DestinationDetailPage() {
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex justify-between items-start mb-2">
                     <Link href={`/bungalows/${prop.slug}`}>
-                      <h3 className="font-serif text-2xl text-charcoal group-hover:text-gold transition-colors">{prop.name}</h3>
+                      <h3 className="font-serif text-2xl text-white group-hover:text-gold transition-colors">{prop.name}</h3>
                     </Link>
                     <div className="flex items-center gap-1 mt-1">
                       <Star className="w-4 h-4 text-gold fill-gold" />
-                      <span className="text-sm font-bold">{prop.rating}</span>
+                      <span className="text-sm font-bold text-white">{prop.rating}</span>
                     </div>
                   </div>
 
                   <p className="text-xs text-charcoal/60 mb-5 flex items-center gap-1.5 font-medium">
-                    <MapPin className="w-3.5 h-3.5" /> {dest.name}, {dest.state}
+                    <MapPin className="w-3.5 h-3.5 text-gold" /> {dest.name}, {dest.state}
                   </p>
 
                   <div className="flex gap-4 text-xs text-charcoal/70 mb-6 font-medium">
@@ -279,14 +279,14 @@ export default function DestinationDetailPage() {
                     <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-gold" /> {prop.beds} Bedrooms</span>
                   </div>
 
-                  <div className="mt-auto flex items-center justify-between pt-5 border-t border-beige">
+                  <div className="mt-auto flex items-center justify-between pt-5 border-t border-white/10">
                     <div>
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-charcoal/50 mb-1">From</p>
-                      <p className="font-serif text-xl text-charcoal tracking-tight">₹{prop.price} <span className="text-xs font-sans font-normal text-charcoal/50 tracking-widest uppercase">/ Night</span></p>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-gold mb-1">From</p>
+                      <p className="font-serif text-xl text-white tracking-tight">₹{prop.price} <span className="text-xs font-sans font-normal text-white/50 tracking-widest uppercase">/ Night</span></p>
                     </div>
                     <Link
                       href={`/bungalows/${prop.slug}`}
-                      className="w-12 h-12 rounded-full border border-beige flex items-center justify-center hover:bg-gold hover:text-ivory hover:border-gold transition-all duration-300"
+                      className="w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-forest transition-all duration-300"
                     >
                       <ArrowRight className="w-5 h-5" />
                     </Link>
@@ -299,8 +299,8 @@ export default function DestinationDetailPage() {
 
         {/* Other Destinations */}
         <section className="container mx-auto px-6 lg:px-12">
-          <div className="bg-sand/30 rounded-3xl p-8 lg:p-12 text-center">
-            <h3 className="font-serif text-2xl md:text-3xl text-charcoal mb-4">Explore More Destinations</h3>
+          <div className="bg-[#141A16] border border-white/10 rounded-3xl p-8 lg:p-12 text-center">
+            <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Explore More Destinations</h3>
             <p className="text-charcoal/70 text-sm max-w-xl mx-auto mb-8 font-light">
               From misty hills to private coastal waters, discover our handpicked homes across India.
             </p>
@@ -310,7 +310,7 @@ export default function DestinationDetailPage() {
                   key={key}
                   href={`/destinations/${key}`}
                   className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
-                    key === slug ? "bg-charcoal text-ivory" : "bg-white text-charcoal hover:border-gold border border-beige"
+                    key === slug ? "bg-gold text-forest font-bold" : "bg-[#0E1210] text-charcoal hover:border-gold border border-white/10 hover:text-white"
                   }`}
                 >
                   {DESTINATIONS_DATA[key].name}

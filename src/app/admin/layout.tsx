@@ -7,33 +7,33 @@ export default function AdminLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex min-h-screen bg-sand/10">
+    <div className="flex min-h-screen bg-[#0A0D0B] text-charcoal">
       {/* Sidebar */}
-      <aside className="w-64 border-r border-sand/50 bg-ivory">
-        <div className="flex h-16 items-center border-b border-sand/50 px-6">
-          <span className="font-serif text-xl text-charcoal">Admin Portal</span>
+      <aside className="w-64 border-r border-white/10 bg-[#0E1210]">
+        <div className="flex h-16 items-center border-b border-white/10 px-6">
+          <span className="font-serif text-xl text-white">Admin Portal</span>
         </div>
         
-        <nav className="space-y-1 p-4">
-          <Link href="/admin" className="flex items-center gap-3 rounded-md bg-charcoal px-3 py-2 text-sm font-medium text-ivory">
+        <nav className="space-y-1.5 p-4">
+          <Link href="/admin" className="flex items-center gap-3 rounded-xl bg-gold text-forest font-semibold px-3.5 py-2.5 text-sm">
             <LayoutDashboard className="h-4 w-4" /> Dashboard
           </Link>
-          <Link href="/admin/bookings" className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-charcoal/70 transition-colors hover:bg-sand/30 hover:text-charcoal">
+          <Link href="/admin/bookings" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-white/5 hover:text-white">
             <CalendarDays className="h-4 w-4" /> Bookings
           </Link>
-          <Link href="/admin/properties" className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-charcoal/70 transition-colors hover:bg-sand/30 hover:text-charcoal">
+          <Link href="/admin/properties" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-white/5 hover:text-white">
             <Building className="h-4 w-4" /> Properties
           </Link>
-          <Link href="/admin/destinations" className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-charcoal/70 transition-colors hover:bg-sand/30 hover:text-charcoal">
+          <Link href="/admin/destinations" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-white/5 hover:text-white">
             <MapPin className="h-4 w-4" /> Destinations
           </Link>
-          <Link href="/admin/users" className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-charcoal/70 transition-colors hover:bg-sand/30 hover:text-charcoal">
+          <Link href="/admin/users" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-white/5 hover:text-white">
             <Users className="h-4 w-4" /> Users
           </Link>
-          <Link href="/admin/reviews" className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-charcoal/70 transition-colors hover:bg-sand/30 hover:text-charcoal">
+          <Link href="/admin/reviews" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-white/5 hover:text-white">
             <MessageSquare className="h-4 w-4" /> Reviews
           </Link>
-          <Link href="/admin/settings" className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-charcoal/70 transition-colors hover:bg-sand/30 hover:text-charcoal">
+          <Link href="/admin/settings" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-white/5 hover:text-white">
             <Settings className="h-4 w-4" /> Settings
           </Link>
         </nav>
@@ -42,19 +42,19 @@ export default function AdminLayout({
       {/* Main Content */}
       <div className="flex flex-1 flex-col">
         {/* Top Header */}
-        <header className="flex h-16 items-center justify-between border-b border-sand/50 bg-ivory px-8">
-          <h1 className="font-medium text-charcoal">Dashboard Overview</h1>
+        <header className="flex h-16 items-center justify-between border-b border-white/10 bg-[#0E1210] px-8">
+          <h1 className="font-serif text-lg text-white">Console Overview</h1>
           <div className="flex items-center gap-4">
-            <Link href="/" className="text-sm font-medium text-charcoal hover:underline">
+            <Link href="/" className="text-xs uppercase tracking-wider text-gold hover:underline">
               View Public Site
             </Link>
-            <div className="h-8 w-8 rounded-full bg-charcoal text-white flex items-center justify-center font-medium">
+            <div className="h-8 w-8 rounded-full bg-gold text-forest flex items-center justify-center font-bold text-xs">
               A
             </div>
           </div>
         </header>
 
-        <main className="flex-1 p-8">
+        <main className="flex-1 p-8 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#141A16] to-[#0A0D0B]">
           {children}
         </main>
       </div>

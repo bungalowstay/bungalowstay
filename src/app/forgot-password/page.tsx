@@ -10,13 +10,14 @@ export default function ForgotPasswordPage() {
   const [sent, setSent] = useState(false)
 
   return (
-    <div className="flex min-h-screen flex-col bg-ivory text-charcoal">
-      <Header theme="light" />
+    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-charcoal">
+      <Header />
 
-      <main className="flex-1 flex items-center justify-center pt-32 pb-24 px-6">
-        <div className="w-full max-w-md bg-white border border-beige rounded-3xl p-8 lg:p-10 shadow-soft">
+      <main className="flex-1 flex items-center justify-center pt-32 pb-24 px-6 bg-radial-[circle_at_center,_var(--tw-gradient-stops)] from-[#141A16] to-[#0A0D0B]">
+        <div className="w-full max-w-md bg-[#141A16] border border-white/10 rounded-3xl p-8 lg:p-10 shadow-2xl">
           <div className="text-center mb-8">
-            <h1 className="font-serif text-3xl text-charcoal">Reset Password</h1>
+            <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold block mb-2">Account Recovery</span>
+            <h1 className="font-serif text-3xl text-white">Reset Password</h1>
             <p className="text-xs text-charcoal/60 mt-2 font-light">
               Enter your email address and we will send you a secure link to reset your password.
             </p>
@@ -24,12 +25,12 @@ export default function ForgotPasswordPage() {
 
           {sent ? (
             <div className="text-center py-6">
-              <CheckCircle2 className="w-12 h-12 text-forest mx-auto mb-4" />
-              <h2 className="font-serif text-2xl text-charcoal mb-2">Check Your Email</h2>
+              <CheckCircle2 className="w-12 h-12 text-gold mx-auto mb-4" />
+              <h2 className="font-serif text-2xl text-white mb-2">Check Your Email</h2>
               <p className="text-xs text-charcoal/70 mb-6">We have sent recovery instructions to your email address.</p>
               <Link
                 href="/login"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-charcoal hover:text-gold transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold hover:underline transition-colors"
               >
                 <ArrowLeft className="w-3.5 h-3.5" /> Back to Sign In
               </Link>
@@ -38,18 +39,18 @@ export default function ForgotPasswordPage() {
             <form onSubmit={(e) => { e.preventDefault(); setSent(true) }} className="space-y-4">
               <div>
                 <label className="block text-[10px] font-bold uppercase tracking-widest text-charcoal/70 mb-1.5">Email Address</label>
-                <input required type="email" placeholder="you@domain.com" className="w-full px-4 py-3 border border-beige rounded-xl bg-ivory/30 focus:outline-none focus:border-gold text-sm" />
+                <input required type="email" placeholder="you@domain.com" className="w-full px-4 py-3 border border-beige rounded-xl bg-[#0E1210] text-white focus:outline-none focus:border-gold text-sm" />
               </div>
 
               <button
                 type="submit"
-                className="w-full py-4 bg-charcoal text-ivory rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-charcoal transition-colors"
+                className="w-full py-4 bg-gradient-to-r from-gold to-gold-light text-forest rounded-full text-xs font-bold uppercase tracking-widest hover:shadow-[0_0_25px_rgba(201,169,110,0.5)] transition-all"
               >
                 Send Reset Link
               </button>
 
-              <div className="text-center pt-4 border-t border-beige">
-                <Link href="/login" className="inline-flex items-center gap-1.5 text-xs text-charcoal/60 hover:text-charcoal font-medium">
+              <div className="text-center pt-4 border-t border-white/10">
+                <Link href="/login" className="inline-flex items-center gap-1.5 text-xs text-charcoal/60 hover:text-gold font-medium">
                   <ArrowLeft className="w-3.5 h-3.5" /> Back to Sign In
                 </Link>
               </div>

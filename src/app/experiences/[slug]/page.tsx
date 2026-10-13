@@ -175,8 +175,8 @@ export default function ExperienceDetailPage() {
               </p>
             </div>
 
-            <div className="lg:col-span-5 bg-white border border-beige p-8 rounded-3xl shadow-soft">
-              <h3 className="font-serif text-xl text-charcoal mb-6 flex items-center gap-2">
+            <div className="lg:col-span-5 bg-[#141A16] border border-white/10 p-8 rounded-3xl shadow-soft">
+              <h3 className="font-serif text-xl text-white mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-gold" /> Collection Inclusions
               </h3>
               <ul className="space-y-4">
@@ -195,14 +195,14 @@ export default function ExperienceDetailPage() {
         <section className="container mx-auto px-6 lg:px-12 mb-24">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-2">Available Homes</p>
-              <h2 className="font-serif text-3xl md:text-5xl text-charcoal">
+              <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold mb-2">Available Homes</p>
+              <h2 className="font-serif text-3xl md:text-5xl text-white">
                 Handpicked Stays
               </h2>
             </div>
             <Link
               href="/bungalows"
-              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-charcoal hover:text-gold transition-colors"
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold hover:underline transition-colors"
             >
               Explore All Homes <ArrowRight className="w-4 h-4" />
             </Link>
@@ -215,7 +215,7 @@ export default function ExperienceDetailPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 key={i}
-                className="group flex flex-col bg-white border border-beige rounded-2xl overflow-hidden shadow-soft hover:shadow-float transition-all duration-500"
+                className="group flex flex-col bg-[#141A16] border border-white/10 hover:border-gold/30 rounded-3xl overflow-hidden shadow-soft hover:shadow-2xl transition-all duration-500"
               >
                 <Link href={`/bungalows/${prop.slug}`} className="relative aspect-[4/3] overflow-hidden block">
                   <Image
@@ -224,11 +224,11 @@ export default function ExperienceDetailPage() {
                     fill
                     className="object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   
                   <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                     {prop.tags.map(tag => (
-                      <span key={tag} className="bg-white/90 backdrop-blur-md text-charcoal text-[9px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold shadow-sm">
+                      <span key={tag} className="bg-[#0E1210]/80 backdrop-blur-md text-gold text-[9px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold border border-gold/20 shadow-sm">
                         {tag}
                       </span>
                     ))}
@@ -238,16 +238,16 @@ export default function ExperienceDetailPage() {
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex justify-between items-start mb-2">
                     <Link href={`/bungalows/${prop.slug}`}>
-                      <h3 className="font-serif text-2xl text-charcoal group-hover:text-gold transition-colors">{prop.name}</h3>
+                      <h3 className="font-serif text-2xl text-white group-hover:text-gold transition-colors">{prop.name}</h3>
                     </Link>
                     <div className="flex items-center gap-1 mt-1">
                       <Star className="w-4 h-4 text-gold fill-gold" />
-                      <span className="text-sm font-bold">{prop.rating}</span>
+                      <span className="text-sm font-bold text-white">{prop.rating}</span>
                     </div>
                   </div>
 
                   <p className="text-xs text-charcoal/60 mb-5 flex items-center gap-1.5 font-medium">
-                    <MapPin className="w-3.5 h-3.5" /> {prop.loc}
+                    <MapPin className="w-3.5 h-3.5 text-gold" /> {prop.loc}
                   </p>
 
                   <div className="flex gap-4 text-xs text-charcoal/70 mb-6 font-medium">
@@ -255,14 +255,14 @@ export default function ExperienceDetailPage() {
                     <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-gold" /> {prop.beds} Bedrooms</span>
                   </div>
 
-                  <div className="mt-auto flex items-center justify-between pt-5 border-t border-beige">
+                  <div className="mt-auto flex items-center justify-between pt-5 border-t border-white/10">
                     <div>
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-charcoal/50 mb-1">From</p>
-                      <p className="font-serif text-xl text-charcoal tracking-tight">₹{prop.price} <span className="text-xs font-sans font-normal text-charcoal/50 tracking-widest uppercase">/ Night</span></p>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-gold mb-1">From</p>
+                      <p className="font-serif text-xl text-white tracking-tight">₹{prop.price} <span className="text-xs font-sans font-normal text-white/50 tracking-widest uppercase">/ Night</span></p>
                     </div>
                     <Link
                       href={`/bungalows/${prop.slug}`}
-                      className="w-12 h-12 rounded-full border border-beige flex items-center justify-center hover:bg-gold hover:text-ivory hover:border-gold transition-all duration-300"
+                      className="w-12 h-12 rounded-full border border-gold/30 text-gold flex items-center justify-center hover:bg-gold hover:text-forest transition-all duration-300"
                     >
                       <ArrowRight className="w-5 h-5" />
                     </Link>
@@ -275,24 +275,24 @@ export default function ExperienceDetailPage() {
 
         {/* Concierge Booking Banner */}
         <section className="container mx-auto px-6 lg:px-12">
-          <div className="bg-charcoal text-ivory rounded-3xl p-10 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="bg-[#141A16] border border-white/10 rounded-3xl p-10 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
             <div className="max-w-xl">
-              <p className="text-gold text-[10px] font-bold uppercase tracking-[0.2em] mb-3">Private Concierge</p>
+              <p className="text-gold text-[10px] font-bold uppercase tracking-[0.25em] mb-3">Private Concierge</p>
               <h3 className="font-serif text-3xl md:text-4xl text-white mb-4">Need help choosing your stay?</h3>
-              <p className="text-white/70 text-sm md:text-base font-light leading-relaxed">
+              <p className="text-charcoal/70 text-sm md:text-base font-light leading-relaxed">
                 Our bespoke travel curators can handpick estates matching your exact group size, dietary preferences, and travel dates.
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="bg-gold hover:bg-gold/90 text-charcoal font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-colors"
+                className="bg-gradient-to-r from-gold to-gold-light text-forest font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full hover:shadow-[0_0_25px_rgba(201,169,110,0.5)] transition-all"
               >
                 Inquire With Concierge
               </Link>
               <Link
                 href="/experiences"
-                className="border border-white/30 hover:border-white text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full transition-colors"
+                className="border border-white/20 hover:border-gold text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-full hover:text-gold transition-colors"
               >
                 All Collections
               </Link>

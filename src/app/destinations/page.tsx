@@ -18,7 +18,7 @@ export default function DestinationsPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col bg-ivory text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#0A0D0B] text-[#EDE8DE]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -35,10 +35,10 @@ export default function DestinationsPage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">The Locations</p>
               <div className="h-[1px] w-12 bg-gold" />
             </div>
-            <h1 className="font-serif text-5xl md:text-7xl text-charcoal mb-8 tracking-tight">
+            <h1 className="font-serif text-5xl md:text-7xl text-white mb-8 tracking-tight">
               Our Destinations
             </h1>
-            <p className="text-charcoal/70 text-lg md:text-xl font-light leading-relaxed text-balance">
+            <p className="text-[#EDE8DE]/70 text-lg md:text-xl font-light leading-relaxed text-balance">
               Discover India's most breathtaking locations. From misty mountains to sun-drenched coastlines, your perfect getaway awaits in our handpicked enclaves.
             </p>
           </motion.div>
