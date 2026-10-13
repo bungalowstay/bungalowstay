@@ -38,13 +38,23 @@ export function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-24">
           <div className="lg:col-span-5">
             <Link href="/" className="inline-block mb-10 group relative z-10">
-              <div className="relative h-24 w-64 lg:h-28 lg:w-72 bg-white/95 rounded-3xl p-4 shadow-lg border border-white/20 transition-transform group-hover:scale-105">
-                <Image 
-                  src="/logo.png" 
-                  alt="Bungalow Stay Logo" 
-                  fill
-                  className="object-contain object-center p-2 drop-shadow-sm" 
-                />
+              <div className="inline-flex items-center gap-4 bg-white px-6 py-4 rounded-3xl shadow-xl border border-white/40 transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                <div className="relative h-16 w-16 flex-shrink-0">
+                  <Image 
+                    src="/logo.png" 
+                    alt="Bungalow Stay Logo" 
+                    fill
+                    className="object-contain drop-shadow-md" 
+                  />
+                </div>
+                <div className="flex flex-col text-left pr-2">
+                  <span className="font-serif text-2xl font-bold tracking-[0.06em] text-[#244833] leading-none">
+                    BUNGALOW STAY
+                  </span>
+                  <span className="text-[10px] tracking-[0.28em] uppercase font-bold text-[#A88647] mt-1.5">
+                    Luxury Sanctuaries
+                  </span>
+                </div>
               </div>
             </Link>
             <p className="text-white/80 text-sm leading-relaxed max-w-md mb-10 text-pretty">

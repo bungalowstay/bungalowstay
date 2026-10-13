@@ -71,16 +71,26 @@ export function Header({ className, theme = "transparent" }: { className?: strin
       >
         <div className="container mx-auto flex items-center justify-between px-6 lg:px-12">
           
-          {/* LOGO (Enlarged, Strictly Visible & Crystal Clear) */}
+          {/* LOGO (Enlarged, Highlighted Luxury Badge, Strictly Visible) */}
           <Link href="/" className="flex items-center group relative z-50">
-            <div className="relative h-20 w-56 lg:h-24 lg:w-64 transition-transform duration-500 group-hover:scale-105">
-              <Image 
-                src="/logo.png" 
-                alt="Bungalow Stay Logo" 
-                fill
-                className="object-contain object-left drop-shadow-[0_4px_16px_rgba(36,72,51,0.18)] transition-all duration-500"
-                priority
-              />
+            <div className="flex items-center gap-3 bg-white/95 px-4 py-2 sm:px-5 sm:py-2.5 rounded-2xl border border-[#244833]/20 shadow-[0_6px_25px_rgba(36,72,51,0.12)] transition-all duration-300 group-hover:shadow-[0_10px_35px_rgba(36,72,51,0.22)] group-hover:scale-105 group-hover:border-[#244833]/40">
+              <div className="relative h-14 w-14 sm:h-16 sm:w-16 flex-shrink-0">
+                <Image 
+                  src="/logo.png" 
+                  alt="Bungalow Stay Logo" 
+                  fill
+                  className="object-contain drop-shadow-md"
+                  priority
+                />
+              </div>
+              <div className="flex flex-col text-left pr-2">
+                <span className="font-serif text-lg sm:text-xl lg:text-2xl font-bold tracking-[0.06em] text-[#244833] leading-none">
+                  BUNGALOW STAY
+                </span>
+                <span className="text-[9px] sm:text-[10px] tracking-[0.28em] uppercase font-bold text-[#A88647] mt-1">
+                  Luxury Sanctuaries
+                </span>
+              </div>
             </div>
           </Link>
 
