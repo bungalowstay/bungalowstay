@@ -34,21 +34,21 @@
   }
 }
 :root {
-  /* Luxury Greenish-White Light Theme Palette */
-  --ivory: #F8FAF7;          /* Soft luminous herbal-tinted white base */
-  --cream: #FFFFFF;          /* Pure crisp white for elevated cards & sections */
-  --beige: #E2EAE3;          /* Delicate minty-sage border & dividers */
-  --charcoal: #1C2921;       /* Deep rich botanical forest green-black for ultra-crisp readable text */
-  --sage: #4E6B56;           /* Refined sage green for secondary labels & icons */
-  --botanical: #244833;      /* Signature deep emerald forest green */
-  --forest: #1A3626;         /* Deep lush botanical green for footers & accent hero strips */
-  --gold: #A88647;           /* Elegant warm antique gold accent */
-  --gold-light: #CDB788;     /* Soft warm champagne gold */
-  --terracotta: #C86D51;     /* Warm terracotta accent */
-  --sand: #ECF2ED;           /* Subtle greenish-white background pill/tag fill */
+  /* Rich Light Green Botanical Theme Palette */
+  --ivory: #EDF4ED;          /* True light green base (soothing sage mist) */
+  --cream: #F5FAF5;          /* Crisp pale mint white for clean elevated cards */
+  --beige: #D5E5D7;          /* Soft light-green borders and dividers */
+  --charcoal: #12281B;       /* Deep high-contrast forest black for ultra-crisp readable text */
+  --sage: #3D6B4E;           /* Vibrant light-forest sage green for icons and labels */
+  --botanical: #1E5133;      /* Signature rich emerald botanical green */
+  --forest: #143722;         /* Deep lush evergreen for footer and key contrast elements */
+  --gold: #A88647;           /* Warm antique gold accent */
+  --gold-light: #CDB788;     /* Warm champagne gold */
+  --terracotta: #C86D51;     /* Terracotta accent */
+  --sand: #DFEDE1;           /* Tinted light green badge and pill fill */
 
-  --background: #F8FAF7;     /* Luminous greenish white */
-  --foreground: #1C2921;     /* Deep crystal-clear botanical dark text */
+  --background: #EDF4ED;     /* Distinctly light green background */
+  --foreground: #12281B;     /* Deep forest dark text */
 }
 
 /* Dark mode disabled for consistent premium editorial aesthetic */

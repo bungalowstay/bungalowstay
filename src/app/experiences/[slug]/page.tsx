@@ -175,7 +175,7 @@ export default function ExperienceDetailPage() {
               </p>
             </div>
 
-            <div className="lg:col-span-5 bg-white border border-[#E2EAE3] p-8 rounded-3xl shadow-soft">
+            <div className="lg:col-span-5 bg-white border border-[#D5E5D7] p-8 rounded-3xl shadow-soft">
               <h3 className="font-serif text-xl text-[#1C2921] mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-gold" /> Collection Inclusions
               </h3>
@@ -215,7 +215,7 @@ export default function ExperienceDetailPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 key={i}
-                className="group flex flex-col bg-white border border-[#E2EAE3] hover:border-gold/30 rounded-3xl overflow-hidden shadow-soft hover:shadow-2xl transition-all duration-500"
+                className="group flex flex-col bg-white border border-[#D5E5D7] hover:border-gold/30 rounded-3xl overflow-hidden shadow-soft hover:shadow-2xl transition-all duration-500"
               >
                 <Link href={`/bungalows/${prop.slug}`} className="relative aspect-[4/3] overflow-hidden block">
                   <Image
@@ -255,7 +255,7 @@ export default function ExperienceDetailPage() {
                     <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-gold" /> {prop.beds} Bedrooms</span>
                   </div>
 
-                  <div className="mt-auto flex items-center justify-between pt-5 border-t border-[#E2EAE3]">
+                  <div className="mt-auto flex items-center justify-between pt-5 border-t border-[#D5E5D7]">
                     <div>
                       <p className="text-[10px] font-bold uppercase tracking-widest text-gold mb-1">From</p>
                       <p className="font-serif text-xl text-[#1C2921] tracking-tight">₹{prop.price} <span className="text-xs font-sans font-normal text-[#1C2921]/50 tracking-widest uppercase">/ Night</span></p>
@@ -275,7 +275,7 @@ export default function ExperienceDetailPage() {
 
         {/* Concierge Booking Banner */}
         <section className="container mx-auto px-6 lg:px-12">
-          <div className="bg-white border border-[#E2EAE3] rounded-3xl p-10 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+          <div className="bg-white border border-[#D5E5D7] rounded-3xl p-10 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
             <div className="max-w-xl">
               <p className="text-gold text-[10px] font-bold uppercase tracking-[0.25em] mb-3">Private Concierge</p>
               <h3 className="font-serif text-3xl md:text-4xl text-[#1C2921] mb-4">Need help choosing your stay?</h3>

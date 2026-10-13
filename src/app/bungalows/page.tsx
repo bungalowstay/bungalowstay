@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 export default function BungalowsPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921]">
+    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -37,10 +37,10 @@ export default function BungalowsPage() {
               transition={{ duration: 0.6 }}
               className="flex items-center gap-4"
             >
-              <button className="flex items-center gap-2 px-6 py-3.5 bg-white border border-[#E2EAE3] rounded-full text-[10px] font-bold uppercase tracking-widest text-[#1C2921] hover:border-gold hover:text-gold transition-colors shadow-lg">
+              <button className="flex items-center gap-2 px-6 py-3.5 bg-white border border-[#D5E5D7] rounded-full text-[10px] font-bold uppercase tracking-widest text-[#1C2921] hover:border-gold hover:text-gold transition-colors shadow-lg">
                 <SlidersHorizontal className="w-4 h-4 text-gold" /> Filters
               </button>
-              <button className="flex items-center gap-2 px-6 py-3.5 bg-white border border-[#E2EAE3] rounded-full text-[10px] font-bold uppercase tracking-widest text-[#1C2921] hover:border-gold hover:text-gold transition-colors shadow-lg">
+              <button className="flex items-center gap-2 px-6 py-3.5 bg-white border border-[#D5E5D7] rounded-full text-[10px] font-bold uppercase tracking-widest text-[#1C2921] hover:border-gold hover:text-gold transition-colors shadow-lg">
                 Sort By: Curated <ChevronDown className="w-4 h-4 text-gold" />
               </button>
             </motion.div>
@@ -53,9 +53,9 @@ export default function BungalowsPage() {
             
             {/* Minimal Desktop Sidebar */}
             <div className="hidden lg:block w-64 shrink-0">
-              <div className="sticky top-32 space-y-12 p-6 rounded-3xl bg-white/60 border border-[#E2EAE3] backdrop-blur-md">
+              <div className="sticky top-32 space-y-12 p-6 rounded-3xl bg-white/60 border border-[#D5E5D7] backdrop-blur-md">
                 <div>
-                  <h3 className="font-serif text-xl text-[#1C2921] mb-6 border-b border-[#E2EAE3] pb-4">Destinations</h3>
+                  <h3 className="font-serif text-xl text-[#1C2921] mb-6 border-b border-[#D5E5D7] pb-4">Destinations</h3>
                   <ul className="space-y-4">
                     {['Lonavala', 'Goa', 'Alibaug', 'Karjat', 'Mahabaleshwar'].map(dest => (
                       <li key={dest}>
@@ -69,7 +69,7 @@ export default function BungalowsPage() {
                 </div>
                 
                 <div>
-                  <h3 className="font-serif text-xl text-[#1C2921] mb-6 border-b border-[#E2EAE3] pb-4">Experiences</h3>
+                  <h3 className="font-serif text-xl text-[#1C2921] mb-6 border-b border-[#D5E5D7] pb-4">Experiences</h3>
                   <ul className="space-y-4">
                     {['Private Pool', 'Pet Friendly', 'Heritage', 'Nature Retreat'].map(exp => (
                       <li key={exp}>
@@ -99,7 +99,7 @@ export default function BungalowsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
                   key={i} 
-                  className="group flex flex-col bg-white border border-[#E2EAE3] rounded-2xl overflow-hidden shadow-2xl hover:border-gold/40 hover:-translate-y-1.5 transition-all duration-500"
+                  className="group flex flex-col bg-white border border-[#D5E5D7] rounded-2xl overflow-hidden shadow-2xl hover:border-gold/40 hover:-translate-y-1.5 transition-all duration-500"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image src={prop.img} alt={prop.name} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
@@ -134,7 +134,7 @@ export default function BungalowsPage() {
                       <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-gold" /> {prop.beds} Beds</span>
                     </div>
                     
-                    <div className="mt-auto flex items-center justify-between pt-5 border-t border-[#E2EAE3]">
+                    <div className="mt-auto flex items-center justify-between pt-5 border-t border-[#D5E5D7]">
                       <div>
                         <p className="text-[10px] font-bold uppercase tracking-widest text-[#1C2921]/50 mb-1">From</p>
                         <p className="font-serif text-xl text-[#1C2921] tracking-tight">₹{prop.price} <span className="text-xs font-sans font-normal text-[#1C2921]/50 tracking-widest uppercase">/ Night</span></p>

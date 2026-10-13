@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 export default function AboutPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921]">
+    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -51,7 +51,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="lg:w-1/2 w-full aspect-[4/5] relative rounded-[2rem] overflow-hidden shadow-2xl border border-[#E2EAE3]"
+              className="lg:w-1/2 w-full aspect-[4/5] relative rounded-[2rem] overflow-hidden shadow-2xl border border-[#D5E5D7]"
             >
               <Image 
                 src="https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=1200&auto=format&fit=crop" 
@@ -65,7 +65,7 @@ export default function AboutPage() {
         </section>
 
         {/* STATS STRIP */}
-        <section className="py-16 bg-[#080B09] text-white border-y border-[#E2EAE3]">
+        <section className="py-16 bg-[#080B09] text-white border-y border-[#D5E5D7]">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 divide-x divide-white/10">
               {[
@@ -103,7 +103,7 @@ export default function AboutPage() {
                 { title: "Absolute Privacy", desc: "Your own private oasis. No shared lobbies, no crowded pools. Just perfect seclusion.", icon: ShieldCheck, num: "03" },
                 { title: "Hotel-Grade Quality", desc: "Crisp 400-thread count linens, premium amenities, and immaculate hygiene standards.", icon: Sparkles, num: "04" },
               ].map((val, i) => (
-                <div key={i} className="bg-white border border-[#E2EAE3] p-10 rounded-[2rem] shadow-xl hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
+                <div key={i} className="bg-white border border-[#D5E5D7] p-10 rounded-[2rem] shadow-xl hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
                   <div className="absolute -right-4 -top-4 text-[120px] font-serif text-white/[0.03] leading-none select-none z-0">
                     {val.num}
                   </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-32 bg-[#F8FAF7] text-center">
+        <section className="py-32 bg-[#EDF4ED] text-center">
           <div className="container mx-auto px-6 lg:px-12 text-center max-w-3xl">
             <h2 className="font-serif text-4xl lg:text-6xl text-[#1C2921] mb-8 text-balance">
               Experience the difference for yourself.

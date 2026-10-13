@@ -11,11 +11,11 @@ export default function RegisterPage() {
   const [success, setSuccess] = useState(false)
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-charcoal">
       <Header />
 
-      <main className="flex-1 flex items-center justify-center pt-32 pb-24 px-6 bg-radial-[circle_at_center,_var(--tw-gradient-stops)] from-[#F0F5F1] to-[#F8FAF7]">
-        <div className="w-full max-w-md bg-white border border-[#E2EAE3] rounded-3xl p-8 lg:p-10 shadow-2xl">
+      <main className="flex-1 flex items-center justify-center pt-32 pb-24 px-6 bg-radial-[circle_at_center,_var(--tw-gradient-stops)] from-[#DFEDE1] to-[#EDF4ED]">
+        <div className="w-full max-w-md bg-white border border-[#D5E5D7] rounded-3xl p-8 lg:p-10 shadow-2xl">
           <div className="text-center mb-8">
             <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold mb-2">Member Privileges</p>
             <h1 className="font-serif text-3xl text-[#1C2921]">Create Your Account</h1>
@@ -63,7 +63,7 @@ export default function RegisterPage() {
                 Create Account <ArrowRight className="w-4 h-4" />
               </button>
 
-              <div className="text-center pt-4 border-t border-[#E2EAE3]">
+              <div className="text-center pt-4 border-t border-[#D5E5D7]">
                 <p className="text-xs text-charcoal/60">
                   Already have an account?{" "}
                   <Link href="/login" className="font-bold text-gold hover:underline">

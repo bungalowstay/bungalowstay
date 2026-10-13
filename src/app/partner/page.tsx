@@ -10,10 +10,10 @@ export default function PartnerPage() {
   const [submitted, setSubmitted] = useState(false)
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-charcoal">
       <Header />
 
-      <main className="flex-1 pt-32 pb-24 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#F0F5F1] to-[#F8FAF7]">
+      <main className="flex-1 pt-32 pb-24 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#DFEDE1] to-[#EDF4ED]">
         {/* Hero */}
         <section className="container mx-auto px-6 lg:px-12 mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -28,7 +28,7 @@ export default function PartnerPage() {
               <p className="text-charcoal/70 text-lg md:text-xl font-light leading-relaxed mb-8">
                 Partner with India's most exclusive boutique villa collective. We handle rigorous guest vetting, 5-star operations, dynamic yield pricing, and dedicated estate maintenance.
               </p>
-              <div className="grid grid-cols-2 gap-6 pt-6 border-t border-[#E2EAE3]">
+              <div className="grid grid-cols-2 gap-6 pt-6 border-t border-[#D5E5D7]">
                 <div>
                   <p className="font-serif text-4xl text-gold mb-1 font-bold">94%</p>
                   <p className="text-xs text-charcoal/60 uppercase tracking-wider">Average Peak Occupancy</p>
@@ -40,7 +40,7 @@ export default function PartnerPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-5 relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-[#E2EAE3]">
+            <div className="lg:col-span-5 relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-[#D5E5D7]">
               <Image
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
                 alt="Luxury Estate"
@@ -59,21 +59,21 @@ export default function PartnerPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white border border-[#E2EAE3] p-8 rounded-3xl shadow-soft">
+            <div className="bg-white border border-[#D5E5D7] p-8 rounded-3xl shadow-soft">
               <KeyRound className="w-8 h-8 text-gold mb-6" />
               <h3 className="font-serif text-2xl text-[#1C2921] mb-3">Vetted High-Net-Worth Guests</h3>
               <p className="text-charcoal/70 text-sm font-light leading-relaxed">
                 Every reservation undergoes ID verification, strict security deposits, and customized house rule agreements.
               </p>
             </div>
-            <div className="bg-white border border-[#E2EAE3] p-8 rounded-3xl shadow-soft">
+            <div className="bg-white border border-[#D5E5D7] p-8 rounded-3xl shadow-soft">
               <ShieldCheck className="w-8 h-8 text-gold mb-6" />
               <h3 className="font-serif text-2xl text-[#1C2921] mb-3">Full Maintenance & Custody</h3>
               <p className="text-charcoal/70 text-sm font-light leading-relaxed">
                 Bi-weekly deep cleaning, pool sanitization, landscaping oversight, and preventative property inspections.
               </p>
             </div>
-            <div className="bg-white border border-[#E2EAE3] p-8 rounded-3xl shadow-soft">
+            <div className="bg-white border border-[#D5E5D7] p-8 rounded-3xl shadow-soft">
               <TrendingUp className="w-8 h-8 text-gold mb-6" />
               <h3 className="font-serif text-2xl text-[#1C2921] mb-3">Algorithmic Maximum Yield</h3>
               <p className="text-charcoal/70 text-sm font-light leading-relaxed">
@@ -85,7 +85,7 @@ export default function PartnerPage() {
 
         {/* Contact Form */}
         <section className="container mx-auto px-6 lg:px-12 max-w-3xl">
-          <div className="bg-white border border-[#E2EAE3] rounded-3xl p-8 lg:p-12 shadow-2xl">
+          <div className="bg-white border border-[#D5E5D7] rounded-3xl p-8 lg:p-12 shadow-2xl">
             <h2 className="font-serif text-3xl text-[#1C2921] mb-2">Submit Your Property For Review</h2>
             <p className="text-charcoal/70 text-sm mb-8 font-light">
               Fill out the details below. Our acquisitions director will contact you within 24 hours.

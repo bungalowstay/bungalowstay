@@ -3,10 +3,10 @@ import { Footer } from "@/components/layout/footer"
 
 export default function TermsPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-charcoal">
       <Header />
 
-      <main className="flex-1 pt-32 pb-24 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#F0F5F1] to-[#F8FAF7]">
+      <main className="flex-1 pt-32 pb-24 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#DFEDE1] to-[#EDF4ED]">
         <section className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <div className="mb-12">
             <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold mb-3">Legal</p>
@@ -14,7 +14,7 @@ export default function TermsPage() {
             <p className="text-xs text-charcoal/50">Last updated: October 2026</p>
           </div>
 
-          <div className="prose prose-lg text-charcoal/80 font-light leading-relaxed space-y-8 bg-white border border-[#E2EAE3] rounded-3xl p-8 lg:p-12 shadow-2xl">
+          <div className="prose prose-lg text-charcoal/80 font-light leading-relaxed space-y-8 bg-white border border-[#D5E5D7] rounded-3xl p-8 lg:p-12 shadow-2xl">
             <section>
               <h2 className="font-serif text-2xl text-[#1C2921] mb-3">1. Scope of Service</h2>
               <p className="text-sm leading-relaxed">

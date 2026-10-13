@@ -145,7 +145,7 @@ export default function GuideDetailPage() {
           </div>
 
           {/* Blockquote */}
-          <blockquote className="my-12 p-8 border-l-2 border-gold bg-white border border-[#E2EAE3] rounded-r-2xl">
+          <blockquote className="my-12 p-8 border-l-2 border-gold bg-white border border-[#D5E5D7] rounded-r-2xl">
             <p className="font-serif text-xl md:text-2xl text-[#1C2921] italic leading-relaxed mb-3">
               "{article.quote}"
             </p>
@@ -155,8 +155,8 @@ export default function GuideDetailPage() {
           </blockquote>
 
           {/* Where to stay callout */}
-          <div className="bg-white border border-[#E2EAE3] rounded-3xl p-8 my-16 shadow-2xl flex flex-col md:flex-row items-center gap-8">
-            <div className="relative w-full md:w-48 aspect-[4/3] rounded-2xl overflow-hidden shrink-0 border border-[#E2EAE3]">
+          <div className="bg-white border border-[#D5E5D7] rounded-3xl p-8 my-16 shadow-2xl flex flex-col md:flex-row items-center gap-8">
+            <div className="relative w-full md:w-48 aspect-[4/3] rounded-2xl overflow-hidden shrink-0 border border-[#D5E5D7]">
               <Image
                 src={article.recommendedStay.img}
                 alt={article.recommendedStay.name}

@@ -19,7 +19,7 @@ export default function Home() {
   const opacityHero = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921] selection:bg-gold selection:text-[#080B09]">
+    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-[#1C2921] selection:bg-gold selection:text-[#080B09]">
       <Header />
       
       <main className="flex-1" ref={containerRef}>
@@ -38,8 +38,8 @@ export default function Home() {
               priority
             />
             {/* Luminous greenish-white luxury overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#F8FAF7]/90 via-[#F8FAF7]/60 to-[#F8FAF7]" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#F8FAF7]/85 via-[#F8FAF7]/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#EDF4ED]/90 via-[#EDF4ED]/60 to-[#EDF4ED]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#EDF4ED]/85 via-[#EDF4ED]/40 to-transparent" />
           </motion.div>
 
           <div className="container relative z-10 mx-auto px-6 lg:px-12 h-full flex flex-col justify-center pb-28">
@@ -91,9 +91,9 @@ export default function Home() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="bg-white/95 backdrop-blur-2xl rounded-3xl shadow-[0_20px_60px_rgba(28,41,33,0.12)] border border-[#244833]/15 p-3 flex flex-col lg:flex-row items-center divide-y lg:divide-y-0 lg:divide-x divide-[#E2EAE3]"
+            className="bg-white/95 backdrop-blur-2xl rounded-3xl shadow-[0_20px_60px_rgba(28,41,33,0.12)] border border-[#244833]/15 p-3 flex flex-col lg:flex-row items-center divide-y lg:divide-y-0 lg:divide-x divide-[#D5E5D7]"
           >
-            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#F8FAF7] rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none transition-colors group">
+            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#EDF4ED] rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none transition-colors group">
               <div className="w-11 h-11 rounded-full bg-[#ECF2ED] border border-[#244833]/15 flex items-center justify-center group-hover:border-[#244833] group-hover:bg-[#244833]/10 transition-colors">
                 <MapPin className="w-5 h-5 text-[#244833]" />
               </div>
@@ -102,7 +102,7 @@ export default function Home() {
                 <p className="text-sm font-semibold text-[#1C2921]">Where to?</p>
               </div>
             </div>
-            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#F8FAF7] transition-colors group">
+            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#EDF4ED] transition-colors group">
               <div className="w-11 h-11 rounded-full bg-[#ECF2ED] border border-[#244833]/15 flex items-center justify-center group-hover:border-[#244833] group-hover:bg-[#244833]/10 transition-colors">
                 <Calendar className="w-5 h-5 text-[#244833]" />
               </div>
@@ -111,7 +111,7 @@ export default function Home() {
                 <p className="text-sm font-semibold text-[#1C2921]">Add dates</p>
               </div>
             </div>
-            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#F8FAF7] transition-colors group">
+            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#EDF4ED] transition-colors group">
               <div className="w-11 h-11 rounded-full bg-[#ECF2ED] border border-[#244833]/15 flex items-center justify-center group-hover:border-[#244833] group-hover:bg-[#244833]/10 transition-colors">
                 <Users className="w-5 h-5 text-[#244833]" />
               </div>
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
 
         {/* ==================== 03: THE BUNGALOW STANDARD (Greenish White Editorial Trust) ==================== */}
-        <section className="py-28 bg-[#F0F5F1] relative overflow-hidden border-y border-[#E2EAE3]">
+        <section className="py-28 bg-[#DFEDE1] relative overflow-hidden border-y border-[#D5E5D7]">
           {/* Subtle botanical ambient glow */}
           <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#244833]/5 rounded-full blur-[140px] pointer-events-none" />
           
@@ -163,7 +163,7 @@ export default function Home() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.1, duration: 0.6 }}
-                      className="flex flex-col gap-4 p-5 rounded-2xl bg-white border border-[#E2EAE3] shadow-sm hover:border-[#244833]/30 hover:shadow-md transition-all duration-300"
+                      className="flex flex-col gap-4 p-5 rounded-2xl bg-white border border-[#D5E5D7] shadow-sm hover:border-[#244833]/30 hover:shadow-md transition-all duration-300"
                     >
                       <div className="w-12 h-12 rounded-full border border-[#244833]/20 bg-[#ECF2ED] flex items-center justify-center text-[#244833]">
                         <item.icon className="w-5 h-5 stroke-[1.5]" />
@@ -178,7 +178,7 @@ export default function Home() {
               </div>
               
               <div className="lg:w-1/2 w-full">
-                <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(28,41,33,0.12)] border border-[#E2EAE3] group">
+                <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(28,41,33,0.12)] border border-[#D5E5D7] group">
                   <Image 
                     src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" 
                     alt="Interior architecture"
@@ -188,7 +188,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   
                   {/* Floating Stat Card (Greenish-White Glass) */}
-                  <div className="absolute bottom-10 left-6 lg:left-10 bg-white/95 backdrop-blur-xl p-6 rounded-2xl border border-[#E2EAE3] shadow-xl max-w-[240px]">
+                  <div className="absolute bottom-10 left-6 lg:left-10 bg-white/95 backdrop-blur-xl p-6 rounded-2xl border border-[#D5E5D7] shadow-xl max-w-[240px]">
                     <div className="flex items-center gap-3 mb-2">
                       <Star className="w-5 h-5 text-amber-500 fill-amber-500" />
                       <span className="font-serif text-2xl font-bold text-[#1C2921]">4.9/5</span>
@@ -202,7 +202,7 @@ export default function Home() {
         </section>
 
         {/* ==================== 04: FEATURED MASTERWORKS ==================== */}
-        <section className="py-32 bg-[#F8FAF7] relative">
+        <section className="py-32 bg-[#EDF4ED] relative">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
               <div className="max-w-2xl">
@@ -223,7 +223,7 @@ export default function Home() {
                 { name: "Villa Serene", loc: "Assagao, Goa", price: "35,000", guests: 6, rating: 4.8, tags: ["Heritage", "Chef Included"], img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" },
                 { name: "The Cliff Estate", loc: "Karjat, Maharashtra", price: "18,000", guests: 10, rating: 5.0, tags: ["Valley View", "Cinema Room"], img: "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1200&auto=format&fit=crop" },
               ].map((prop, i) => (
-                <Link href="/bungalows/the-glasshouse" key={i} className="group cursor-pointer block bg-white rounded-3xl p-3 border border-[#E2EAE3] shadow-soft hover:shadow-xl hover:border-[#244833]/30 transition-all duration-500">
+                <Link href="/bungalows/the-glasshouse" key={i} className="group cursor-pointer block bg-white rounded-3xl p-3 border border-[#D5E5D7] shadow-soft hover:shadow-xl hover:border-[#244833]/30 transition-all duration-500">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-2xl mb-5 shadow-sm group-hover:shadow-md transition-all">
                     <Image src={prop.img} alt={prop.name} fill className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
@@ -255,7 +255,7 @@ export default function Home() {
                     </div>
                     <p className="text-xs text-[#1C2921]/70 mb-4 flex items-center gap-1.5 font-medium"><MapPin className="w-3.5 h-3.5 text-[#244833]" /> {prop.loc} • {prop.guests} Guests</p>
                     
-                    <div className="flex items-end justify-between pt-4 border-t border-[#E2EAE3]">
+                    <div className="flex items-end justify-between pt-4 border-t border-[#D5E5D7]">
                       <p className="font-serif text-lg font-bold text-[#1C2921]">₹{prop.price} <span className="text-[10px] font-sans font-normal text-[#1C2921]/60 tracking-widest uppercase">/ Night</span></p>
                       <span className="text-xs font-bold text-[#244833] flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore <ArrowRight className="w-3.5 h-3.5" /></span>
                     </div>
@@ -267,7 +267,7 @@ export default function Home() {
         </section>
 
         {/* ==================== 05: CURATED EXPERIENCES (Layered Grid) ==================== */}
-        <section className="py-32 bg-[#F0F5F1] text-[#1C2921] relative border-y border-[#E2EAE3]">
+        <section className="py-32 bg-[#DFEDE1] text-[#1C2921] relative border-y border-[#D5E5D7]">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
               <div className="flex items-center gap-4 mb-6">
@@ -282,7 +282,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:h-[600px]">
               
               {/* Large Feature */}
-              <Link href="/experiences/heritage-estates" className="lg:col-span-7 relative rounded-3xl overflow-hidden group h-[400px] lg:h-full border border-[#E2EAE3] shadow-md hover:shadow-xl hover:border-[#244833]/30 transition-all">
+              <Link href="/experiences/heritage-estates" className="lg:col-span-7 relative rounded-3xl overflow-hidden group h-[400px] lg:h-full border border-[#D5E5D7] shadow-md hover:shadow-xl hover:border-[#244833]/30 transition-all">
                 <Image src="https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=1600&auto=format&fit=crop" alt="Heritage" fill className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-10 w-full">
@@ -294,7 +294,7 @@ export default function Home() {
 
               <div className="lg:col-span-5 flex flex-col gap-6 h-full">
                 {/* Small Feature 1 */}
-                <Link href="/experiences/wilderness-lodges" className="relative rounded-3xl overflow-hidden group flex-1 min-h-[300px] border border-[#E2EAE3] shadow-md hover:shadow-xl hover:border-[#244833]/30 transition-all">
+                <Link href="/experiences/wilderness-lodges" className="relative rounded-3xl overflow-hidden group flex-1 min-h-[300px] border border-[#D5E5D7] shadow-md hover:shadow-xl hover:border-[#244833]/30 transition-all">
                   <Image src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop" alt="Nature" fill className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 p-8 w-full">
@@ -304,7 +304,7 @@ export default function Home() {
                 </Link>
 
                 {/* Small Feature 2 */}
-                <Link href="/experiences/private-pool-retreats" className="relative rounded-3xl overflow-hidden group flex-1 min-h-[300px] border border-[#E2EAE3] shadow-md hover:shadow-xl hover:border-[#244833]/30 transition-all">
+                <Link href="/experiences/private-pool-retreats" className="relative rounded-3xl overflow-hidden group flex-1 min-h-[300px] border border-[#D5E5D7] shadow-md hover:shadow-xl hover:border-[#244833]/30 transition-all">
                   <Image src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=800&auto=format&fit=crop" alt="Pools" fill className="object-cover transition-transform duration-1000 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 p-8 w-full">
@@ -319,9 +319,9 @@ export default function Home() {
         </section>
 
         {/* ==================== 06: TESTIMONIAL / EDITORIAL ==================== */}
-        <section className="py-32 bg-[#F8FAF7] relative">
+        <section className="py-32 bg-[#EDF4ED] relative">
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="max-w-4xl mx-auto text-center p-12 lg:p-16 rounded-[2.5rem] bg-white border border-[#E2EAE3] shadow-xl">
+            <div className="max-w-4xl mx-auto text-center p-12 lg:p-16 rounded-[2.5rem] bg-white border border-[#D5E5D7] shadow-xl">
               <Star className="w-8 h-8 text-amber-500 fill-amber-500 mx-auto mb-10" />
               <h3 className="font-serif text-3xl md:text-5xl text-[#1C2921] leading-[1.3] mb-12 text-balance">
                 "The attention to detail was magnificent. From the architecture to the private chef, every moment felt curated specifically for us. This is what true luxury feels like."

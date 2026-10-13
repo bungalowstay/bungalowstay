@@ -18,7 +18,7 @@ export default function DestinationsPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921]">
+    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">

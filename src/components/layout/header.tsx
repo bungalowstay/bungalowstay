@@ -62,10 +62,8 @@ export function Header({ className, theme = "transparent" }: { className?: strin
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-500",
           scrolled 
-            ? "bg-[#F8FAF7]/95 backdrop-blur-xl border-b border-[#244833]/15 shadow-[0_8px_30px_rgba(28,41,33,0.08)] py-3" 
-            : theme === "light" 
-              ? "bg-[#F8FAF7]/90 backdrop-blur-md border-b border-[#E2EAE3] py-4"
-              : "bg-gradient-to-b from-white/90 via-white/60 to-transparent py-5 backdrop-blur-sm",
+            ? "bg-[#EDF4ED]/95 backdrop-blur-xl border-b border-[#244833]/15 shadow-[0_8px_30px_rgba(28,41,33,0.08)] py-3" 
+            : "bg-[#EDF4ED]/90 backdrop-blur-md border-b border-[#D5E5D7] py-4 shadow-sm",
           className ? className : ""
         )}
       >
@@ -144,7 +142,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-[#F8FAF7]/98 backdrop-blur-2xl pt-32 px-6 pb-12 flex flex-col lg:hidden overflow-y-auto"
+            className="fixed inset-0 z-40 bg-[#EDF4ED]/98 backdrop-blur-2xl pt-32 px-6 pb-12 flex flex-col lg:hidden overflow-y-auto"
           >
             <nav className="flex flex-col gap-6 mt-8">
               {navLinks.map((link, index) => (
@@ -157,7 +155,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
                   <Link 
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-3xl font-serif text-[#1C2921] hover:text-[#244833] transition-colors block py-3 border-b border-[#E2EAE3]"
+                    className="text-3xl font-serif text-[#1C2921] hover:text-[#244833] transition-colors block py-3 border-b border-[#D5E5D7]"
                   >
                     {link.name}
                   </Link>

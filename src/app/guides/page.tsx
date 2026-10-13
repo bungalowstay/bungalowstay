@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function BlogPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#F8FAF7] text-[#1C2921]">
+    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -31,7 +31,7 @@ export default function BlogPage() {
               { title: "A Weekend Guide to Alibaug's Hidden Beaches", cat: "Guides", date: "Sep 10, 2026", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" },
               { title: "Designing the Perfect Private Pool Retreat", cat: "Design", date: "Sep 05, 2026", img: "https://images.unsplash.com/photo-1572364769167-198dcb7b520c?q=80&w=800&auto=format&fit=crop" },
             ].map((post, i) => (
-              <Link href={`/guides/${post.title.toLowerCase().replace(/ /g, '-')}`} key={i} className="group block p-5 rounded-2xl bg-white border border-[#E2EAE3] hover:border-gold/40 transition-all duration-300">
+              <Link href={`/guides/${post.title.toLowerCase().replace(/ /g, '-')}`} key={i} className="group block p-5 rounded-2xl bg-white border border-[#D5E5D7] hover:border-gold/40 transition-all duration-300">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-6">
                   <Image src={post.img} alt={post.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>

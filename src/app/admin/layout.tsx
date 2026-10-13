@@ -7,10 +7,10 @@ export default function AdminLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex min-h-screen bg-[#F8FAF7] text-charcoal">
+    <div className="flex min-h-screen bg-[#EDF4ED] text-charcoal">
       {/* Sidebar */}
-      <aside className="w-64 border-r border-[#E2EAE3] bg-white">
-        <div className="flex h-16 items-center border-b border-[#E2EAE3] px-6">
+      <aside className="w-64 border-r border-[#D5E5D7] bg-white">
+        <div className="flex h-16 items-center border-b border-[#D5E5D7] px-6">
           <span className="font-serif text-xl text-[#1C2921]">Admin Portal</span>
         </div>
         
@@ -18,22 +18,22 @@ export default function AdminLayout({
           <Link href="/admin" className="flex items-center gap-3 rounded-xl bg-gold text-forest font-semibold px-3.5 py-2.5 text-sm">
             <LayoutDashboard className="h-4 w-4" /> Dashboard
           </Link>
-          <Link href="/admin/bookings" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F0F5F1] hover:text-white">
+          <Link href="/admin/bookings" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
             <CalendarDays className="h-4 w-4" /> Bookings
           </Link>
-          <Link href="/admin/properties" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F0F5F1] hover:text-white">
+          <Link href="/admin/properties" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
             <Building className="h-4 w-4" /> Properties
           </Link>
-          <Link href="/admin/destinations" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F0F5F1] hover:text-white">
+          <Link href="/admin/destinations" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
             <MapPin className="h-4 w-4" /> Destinations
           </Link>
-          <Link href="/admin/users" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F0F5F1] hover:text-white">
+          <Link href="/admin/users" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
             <Users className="h-4 w-4" /> Users
           </Link>
-          <Link href="/admin/reviews" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F0F5F1] hover:text-white">
+          <Link href="/admin/reviews" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
             <MessageSquare className="h-4 w-4" /> Reviews
           </Link>
-          <Link href="/admin/settings" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F0F5F1] hover:text-white">
+          <Link href="/admin/settings" className="flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
             <Settings className="h-4 w-4" /> Settings
           </Link>
         </nav>
@@ -42,7 +42,7 @@ export default function AdminLayout({
       {/* Main Content */}
       <div className="flex flex-1 flex-col">
         {/* Top Header */}
-        <header className="flex h-16 items-center justify-between border-b border-[#E2EAE3] bg-white px-8">
+        <header className="flex h-16 items-center justify-between border-b border-[#D5E5D7] bg-white px-8">
           <h1 className="font-serif text-lg text-[#1C2921]">Console Overview</h1>
           <div className="flex items-center gap-4">
             <Link href="/" className="text-xs uppercase tracking-wider text-gold hover:underline">
@@ -54,7 +54,7 @@ export default function AdminLayout({
           </div>
         </header>
 
-        <main className="flex-1 p-8 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#F0F5F1] to-[#F8FAF7]">
+        <main className="flex-1 p-8 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#DFEDE1] to-[#EDF4ED]">
           {children}
         </main>
       </div>
