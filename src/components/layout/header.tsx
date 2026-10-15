@@ -62,21 +62,21 @@ export function Header({ className, theme = "transparent" }: { className?: strin
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-500",
           scrolled 
-            ? "bg-[#EDF4ED]/95 backdrop-blur-xl border-b border-[#244833]/15 shadow-[0_8px_30px_rgba(28,41,33,0.08)] py-3" 
-            : "bg-[#EDF4ED]/90 backdrop-blur-md border-b border-[#D5E5D7] py-4 shadow-sm",
+            ? "bg-[#FFFFFF]/95 backdrop-blur-xl border-b border-[#244833]/15 shadow-[0_8px_30px_rgba(28,41,33,0.08)] py-3" 
+            : "bg-[#FFFFFF]/90 backdrop-blur-md border-b border-[#EAEFEA] py-4 shadow-sm",
           className ? className : ""
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
           
-          {/* LOGO (Clean, Elegant, Professional & Crystal Clear) */}
-          <Link href="/" className="flex items-center group relative z-50 flex-shrink-0 py-1" aria-label="Bungalow Stay Home">
-            <div className="relative h-14 w-28 sm:h-16 sm:w-32 md:h-18 md:w-36 transition-transform duration-300 group-hover:scale-105">
+          {/* LOGO (Enlarged, Highly Visible, Professional & Crystal Clear) */}
+          <Link href="/" className="flex items-center group relative z-50 flex-shrink-0 py-0.5" aria-label="Bungalow Stay Home">
+            <div className="relative h-20 w-44 sm:h-22 sm:w-52 lg:h-24 lg:w-56 transition-transform duration-300 group-hover:scale-105">
               <Image 
                 src="/logo.png" 
                 alt="Bungalow Stay Logo" 
                 fill
-                className="object-contain object-left drop-shadow-[0_2px_10px_rgba(30,81,51,0.12)] transition-all duration-300"
+                className="object-contain object-left drop-shadow-[0_4px_16px_rgba(26,70,43,0.15)] transition-all duration-300"
                 priority
               />
             </div>
@@ -133,7 +133,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-[#EDF4ED]/98 backdrop-blur-2xl pt-32 px-6 pb-12 flex flex-col lg:hidden overflow-y-auto"
+            className="fixed inset-0 z-40 bg-[#FFFFFF]/98 backdrop-blur-2xl pt-32 px-6 pb-12 flex flex-col lg:hidden overflow-y-auto"
           >
             <nav className="flex flex-col gap-6 mt-8">
               {navLinks.map((link, index) => (
@@ -146,7 +146,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
                   <Link 
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-3xl font-serif text-[#1C2921] hover:text-[#244833] transition-colors block py-3 border-b border-[#D5E5D7]"
+                    className="text-3xl font-serif text-[#1C2921] hover:text-[#244833] transition-colors block py-3 border-b border-[#EAEFEA]"
                   >
                     {link.name}
                   </Link>

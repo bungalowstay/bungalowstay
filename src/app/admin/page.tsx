@@ -6,7 +6,7 @@ export default function AdminDashboardPage() {
     <div className="space-y-8">
       {/* Stats Cards */}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <Card className="bg-white border border-[#D5E5D7] rounded-3xl shadow-xl">
+        <Card className="bg-white border border-[#EAEFEA] rounded-3xl shadow-xl">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-xs uppercase tracking-wider font-semibold text-charcoal/70">Total Revenue (Month)</CardTitle>
             <IndianRupee className="h-4 w-4 text-gold" />
@@ -17,7 +17,7 @@ export default function AdminDashboardPage() {
           </CardContent>
         </Card>
         
-        <Card className="bg-white border border-[#D5E5D7] rounded-3xl shadow-xl">
+        <Card className="bg-white border border-[#EAEFEA] rounded-3xl shadow-xl">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-xs uppercase tracking-wider font-semibold text-charcoal/70">Active Bookings</CardTitle>
             <CalendarDays className="h-4 w-4 text-gold" />
@@ -28,7 +28,7 @@ export default function AdminDashboardPage() {
           </CardContent>
         </Card>
         
-        <Card className="bg-white border border-[#D5E5D7] rounded-3xl shadow-xl">
+        <Card className="bg-white border border-[#EAEFEA] rounded-3xl shadow-xl">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-xs uppercase tracking-wider font-semibold text-charcoal/70">Occupancy Rate</CardTitle>
             <TrendingUp className="h-4 w-4 text-gold" />
@@ -39,7 +39,7 @@ export default function AdminDashboardPage() {
           </CardContent>
         </Card>
         
-        <Card className="bg-white border border-[#D5E5D7] rounded-3xl shadow-xl">
+        <Card className="bg-white border border-[#EAEFEA] rounded-3xl shadow-xl">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-xs uppercase tracking-wider font-semibold text-charcoal/70">New Users</CardTitle>
             <Users className="h-4 w-4 text-gold" />
@@ -53,14 +53,14 @@ export default function AdminDashboardPage() {
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         {/* Recent Bookings */}
-        <Card className="bg-white border border-[#D5E5D7] rounded-3xl shadow-xl">
+        <Card className="bg-white border border-[#EAEFEA] rounded-3xl shadow-xl">
           <CardHeader>
             <CardTitle className="font-serif text-xl text-white">Recent Bookings</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="flex items-center justify-between border-b border-[#D5E5D7] pb-4 last:border-0 last:pb-0">
+                <div key={i} className="flex items-center justify-between border-b border-[#EAEFEA] pb-4 last:border-0 last:pb-0">
                   <div>
                     <p className="font-medium text-[#1C2921]">The Glasshouse Villa</p>
                     <p className="text-xs text-charcoal/60">Rahul Sharma · Oct 12 - Oct 14</p>
@@ -76,7 +76,7 @@ export default function AdminDashboardPage() {
         </Card>
 
         {/* Action Items */}
-        <Card className="bg-white border border-[#D5E5D7] rounded-3xl shadow-xl">
+        <Card className="bg-white border border-[#EAEFEA] rounded-3xl shadow-xl">
           <CardHeader>
             <CardTitle className="font-serif text-xl text-white">Requires Attention</CardTitle>
           </CardHeader>

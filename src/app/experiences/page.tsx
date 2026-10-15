@@ -17,7 +17,7 @@ export default function ExperiencesPage() {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-[#1C2921]">
+    <div className="flex min-h-screen flex-col bg-[#FFFFFF] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -52,11 +52,11 @@ export default function ExperiencesPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: i * 0.1 }}
                 key={i} 
-                className={`flex flex-col lg:flex-row gap-10 items-center p-8 lg:p-10 rounded-[2.5rem] bg-white/80 border border-[#D5E5D7] hover:border-gold/30 transition-all duration-500 ${i % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
+                className={`flex flex-col lg:flex-row gap-10 items-center p-8 lg:p-10 rounded-[2.5rem] bg-white/80 border border-[#EAEFEA] hover:border-gold/30 transition-all duration-500 ${i % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
               >
                 {/* Image */}
                 <Link href={`/experiences/${exp.title.toLowerCase().replace(/ /g, '-')}`} className="w-full lg:w-3/5 group relative">
-                  <div className="relative aspect-[16/9] lg:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border border-[#D5E5D7]">
+                  <div className="relative aspect-[16/9] lg:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border border-[#EAEFEA]">
                     <Image 
                       src={exp.img} 
                       alt={exp.title} 

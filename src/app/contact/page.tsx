@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export default function ContactPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-[#1C2921]">
+    <div className="flex min-h-screen flex-col bg-[#FFFFFF] text-[#1C2921]">
       <Header theme="light" />
       
       <main className="flex-1 pt-32 pb-24">
@@ -35,35 +35,35 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="lg:col-span-7 bg-white p-10 md:p-14 rounded-[2rem] border border-[#D5E5D7] shadow-2xl"
+              className="lg:col-span-7 bg-white p-10 md:p-14 rounded-[2rem] border border-[#EAEFEA] shadow-2xl"
             >
               <h2 className="font-serif text-3xl text-[#1C2921] mb-10">Send an Enquiry</h2>
               <form className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">First Name</label>
-                    <input type="text" className="w-full bg-white/5 border border-[#D5E5D7] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="John" />
+                    <input type="text" className="w-full bg-white/5 border border-[#EAEFEA] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="John" />
                   </div>
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">Last Name</label>
-                    <input type="text" className="w-full bg-white/5 border border-[#D5E5D7] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="Doe" />
+                    <input type="text" className="w-full bg-white/5 border border-[#EAEFEA] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="Doe" />
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">Email Address</label>
-                    <input type="email" className="w-full bg-white/5 border border-[#D5E5D7] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="john@example.com" />
+                    <input type="email" className="w-full bg-white/5 border border-[#EAEFEA] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="john@example.com" />
                   </div>
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">Phone Number</label>
-                    <input type="tel" className="w-full bg-white/5 border border-[#D5E5D7] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="+91 98765 43210" />
+                    <input type="tel" className="w-full bg-white/5 border border-[#EAEFEA] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl placeholder:text-[#1C2921]/30" placeholder="+91 98765 43210" />
                   </div>
                 </div>
 
                 <div>
                   <label className="block text-[10px] font-bold uppercase tracking-[0.15em] text-[#1C2921]/60 mb-3">Message</label>
-                  <textarea rows={5} className="w-full bg-white/5 border border-[#D5E5D7] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl resize-none placeholder:text-white/30" placeholder="Tell us about your requirements..."></textarea>
+                  <textarea rows={5} className="w-full bg-white/5 border border-[#EAEFEA] px-5 py-4 text-sm text-white focus:outline-none focus:border-gold focus:bg-white/10 transition-all rounded-xl resize-none placeholder:text-white/30" placeholder="Tell us about your requirements..."></textarea>
                 </div>
 
                 <button type="button" className="bg-gradient-to-r from-[#C9A96E] to-[#DFCAAB] text-[#080B09] px-10 py-5 rounded-full text-xs font-bold uppercase tracking-[0.15em] hover:shadow-[0_0_25px_rgba(201,169,110,0.5)] transition-all duration-300 w-full flex items-center justify-center gap-3">
@@ -79,7 +79,7 @@ export default function ContactPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="lg:col-span-5"
             >
-              <div className="bg-white border border-[#D5E5D7] text-white p-10 md:p-14 rounded-[2rem] shadow-2xl h-full relative overflow-hidden flex flex-col justify-between">
+              <div className="bg-white border border-[#EAEFEA] text-white p-10 md:p-14 rounded-[2rem] shadow-2xl h-full relative overflow-hidden flex flex-col justify-between">
                 {/* Decorative Pattern */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-bl-full pointer-events-none" />
                 

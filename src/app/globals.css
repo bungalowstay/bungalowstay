@@ -34,21 +34,21 @@
   }
 }
 :root {
-  /* Rich Light Green Botanical Theme Palette */
-  --ivory: #EDF4ED;          /* True light green base (soothing sage mist) */
-  --cream: #F5FAF5;          /* Crisp pale mint white for clean elevated cards */
-  --beige: #D5E5D7;          /* Soft light-green borders and dividers */
-  --charcoal: #12281B;       /* Deep high-contrast forest black for ultra-crisp readable text */
-  --sage: #3D6B4E;           /* Vibrant light-forest sage green for icons and labels */
-  --botanical: #1E5133;      /* Signature rich emerald botanical green */
-  --forest: #143722;         /* Deep lush evergreen for footer and key contrast elements */
-  --gold: #A88647;           /* Warm antique gold accent */
+  /* Ultra-Bright Pure White Luxury Theme Palette */
+  --ivory: #FFFFFF;          /* Pure crisp luminous white base */
+  --cream: #FFFFFF;          /* Pure white card backgrounds */
+  --beige: #EAEFEA;          /* Ultra-subtle clean divider/border line */
+  --charcoal: #0F1A14;       /* High-contrast deep dark emerald-black for crystal-clear readability */
+  --sage: #2C523B;           /* Crisp refined botanical green for subtitles and active accents */
+  --botanical: #1A462B;      /* Signature rich emerald green */
+  --forest: #102619;         /* High-contrast dark evergreen for footer */
+  --gold: #A88647;           /* Warm antique gold */
   --gold-light: #CDB788;     /* Warm champagne gold */
   --terracotta: #C86D51;     /* Terracotta accent */
-  --sand: #DFEDE1;           /* Tinted light green badge and pill fill */
+  --sand: #F4F8F4;           /* Very light crisp clean pill/badge fill */
 
-  --background: #EDF4ED;     /* Distinctly light green background */
-  --foreground: #12281B;     /* Deep forest dark text */
+  --background: #FFFFFF;     /* Pure brilliant white background */
+  --foreground: #0F1A14;     /* Deep crystal-clear dark text */
 }
 
 /* Dark mode disabled for consistent premium editorial aesthetic */
@@ -77,9 +77,11 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   text-wrap: pretty;
 }
 
-/* Smooth Scrolling */
+/* Ultra-Smooth Responsive Scrolling */
 html {
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Hide scrollbar for clean horizontal scrolling galleries */
@@ -93,42 +95,42 @@ html {
 
 /* Premium Selection */
 ::selection {
-  background-color: var(--gold);
-  color: #080B09;
+  background-color: var(--botanical);
+  color: #FFFFFF;
 }
 
 /* Focus states for accessibility without compromising design */
 *:focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--botanical);
   outline-offset: 2px;
 }
 
-/* Luxury Greenish-White Mode Glassmorphism & Elevation Utilities */
+/* Luxury Bright White Mode Glassmorphism & Elevation Utilities */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(78, 107, 86, 0.15);
-  box-shadow: 0 10px 30px -5px rgba(28, 41, 33, 0.05);
+  border: 1px solid rgba(234, 239, 234, 0.9);
+  box-shadow: 0 10px 30px -5px rgba(15, 26, 20, 0.04);
 }
 
 .glass-panel-hover {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .glass-panel-hover:hover {
   background: #FFFFFF;
-  border-color: rgba(36, 72, 51, 0.3);
-  box-shadow: 0 20px 40px -10px rgba(28, 41, 33, 0.1), 0 0 25px -5px rgba(168, 134, 71, 0.15);
+  border-color: rgba(26, 70, 43, 0.3);
+  box-shadow: 0 20px 40px -10px rgba(15, 26, 20, 0.08);
   transform: translateY(-4px);
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #244833 0%, #A88647 50%, #1A3626 100%);
+  background: linear-gradient(135deg, #1A462B 0%, #A88647 50%, #102619 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dark-gradient-bg {
-  background: radial-gradient(circle at 50% 0%, rgba(226, 234, 227, 0.8) 0%, rgba(248, 250, 247, 1) 100%);
+  background: radial-gradient(circle at 50% 0%, rgba(244, 248, 244, 0.9) 0%, rgba(255, 255, 255, 1) 100%);
 }
 

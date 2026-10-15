@@ -7,10 +7,10 @@ import { CheckCircle2, ShieldCheck } from "lucide-react"
 
 export default function CheckoutPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#FFFFFF] text-charcoal">
       <Header />
       
-      <main className="flex-1 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#DFEDE1] to-[#EDF4ED] pb-24 pt-16">
+      <main className="flex-1 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#F7FAF7] to-[#FFFFFF] pb-24 pt-16">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <div className="mb-10">
             <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold block mb-2">Reservation Guarantee</span>
@@ -22,10 +22,10 @@ export default function CheckoutPage() {
             <div className="space-y-10">
               
               {/* Trip Details */}
-              <section className="rounded-3xl border border-[#D5E5D7] bg-white p-6 md:p-8 shadow-soft">
+              <section className="rounded-3xl border border-[#EAEFEA] bg-white p-6 md:p-8 shadow-soft">
                 <h2 className="mb-6 font-serif text-2xl text-[#1C2921]">Your Trip</h2>
                 
-                <div className="mb-6 flex items-start justify-between border-b border-[#D5E5D7] pb-6">
+                <div className="mb-6 flex items-start justify-between border-b border-[#EAEFEA] pb-6">
                   <div>
                     <h3 className="font-medium text-[#1C2921] mb-1">Dates</h3>
                     <p className="text-sm text-charcoal/70">Oct 12 – Oct 14, 2026</p>
@@ -43,7 +43,7 @@ export default function CheckoutPage() {
               </section>
               
               {/* Guest Details */}
-              <section className="rounded-3xl border border-[#D5E5D7] bg-white p-6 md:p-8 shadow-soft">
+              <section className="rounded-3xl border border-[#EAEFEA] bg-white p-6 md:p-8 shadow-soft">
                 <h2 className="mb-6 font-serif text-2xl text-[#1C2921]">Guest Details</h2>
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
@@ -68,7 +68,7 @@ export default function CheckoutPage() {
               </section>
 
               {/* Payment Architecture */}
-              <section className="rounded-3xl border border-[#D5E5D7] bg-white p-6 md:p-8 shadow-soft">
+              <section className="rounded-3xl border border-[#EAEFEA] bg-white p-6 md:p-8 shadow-soft">
                 <h2 className="mb-4 font-serif text-2xl text-[#1C2921]">Payment Method</h2>
                 <p className="mb-6 text-sm text-charcoal/70">
                   Transactions are secured with end-to-end 256-bit SSL encryption.
@@ -92,11 +92,11 @@ export default function CheckoutPage() {
 
             {/* Right Column: Order Summary */}
             <div className="relative">
-              <div className="sticky top-28 rounded-3xl border border-[#D5E5D7] bg-white p-8 shadow-2xl">
+              <div className="sticky top-28 rounded-3xl border border-[#EAEFEA] bg-white p-8 shadow-2xl">
                 
                 {/* Property Mini Card */}
-                <div className="mb-6 flex gap-4 border-b border-[#D5E5D7] pb-6">
-                  <div className="h-24 w-28 shrink-0 overflow-hidden rounded-xl bg-sand/30 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop')] bg-cover bg-center border border-[#D5E5D7]" />
+                <div className="mb-6 flex gap-4 border-b border-[#EAEFEA] pb-6">
+                  <div className="h-24 w-28 shrink-0 overflow-hidden rounded-xl bg-sand/30 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop')] bg-cover bg-center border border-[#EAEFEA]" />
                   <div className="flex flex-col justify-center">
                     <p className="text-[10px] font-bold uppercase tracking-wider text-gold">Luxury Villa</p>
                     <h3 className="font-serif text-xl leading-tight text-[#1C2921] mt-1">The Glasshouse</h3>
@@ -123,7 +123,7 @@ export default function CheckoutPage() {
                   </div>
                 </div>
                 
-                <div className="mt-6 flex justify-between border-t border-[#D5E5D7] pt-6 font-serif text-xl font-bold text-white">
+                <div className="mt-6 flex justify-between border-t border-[#EAEFEA] pt-6 font-serif text-xl font-bold text-white">
                   <span>Total (INR)</span>
                   <span className="text-gold">₹61,950</span>
                 </div>

@@ -19,7 +19,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             "bg-botanical text-forest font-semibold hover:bg-gold-light transition-all duration-300": variant === "primary",
             "bg-white text-charcoal border border-beige hover:border-gold/50 transition-all duration-300": variant === "secondary",
             "border border-gold/40 text-charcoal bg-transparent hover:bg-gold/10 hover:border-gold transition-all duration-300": variant === "outline",
-            "text-charcoal hover:bg-[#DFEDE1] transition-all duration-300": variant === "ghost",
+            "text-charcoal hover:bg-[#F7FAF7] transition-all duration-300": variant === "ghost",
             "text-gold underline-offset-4 hover:underline transition-colors": variant === "link",
             
             "h-10 px-6 py-2": size === "default",

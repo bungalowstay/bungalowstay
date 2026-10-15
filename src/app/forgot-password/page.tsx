@@ -10,11 +10,11 @@ export default function ForgotPasswordPage() {
   const [sent, setSent] = useState(false)
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#FFFFFF] text-charcoal">
       <Header />
 
-      <main className="flex-1 flex items-center justify-center pt-32 pb-24 px-6 bg-radial-[circle_at_center,_var(--tw-gradient-stops)] from-[#DFEDE1] to-[#EDF4ED]">
-        <div className="w-full max-w-md bg-white border border-[#D5E5D7] rounded-3xl p-8 lg:p-10 shadow-2xl">
+      <main className="flex-1 flex items-center justify-center pt-32 pb-24 px-6 bg-radial-[circle_at_center,_var(--tw-gradient-stops)] from-[#F7FAF7] to-[#FFFFFF]">
+        <div className="w-full max-w-md bg-white border border-[#EAEFEA] rounded-3xl p-8 lg:p-10 shadow-2xl">
           <div className="text-center mb-8">
             <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold block mb-2">Account Recovery</span>
             <h1 className="font-serif text-3xl text-[#1C2921]">Reset Password</h1>
@@ -49,7 +49,7 @@ export default function ForgotPasswordPage() {
                 Send Reset Link
               </button>
 
-              <div className="text-center pt-4 border-t border-[#D5E5D7]">
+              <div className="text-center pt-4 border-t border-[#EAEFEA]">
                 <Link href="/login" className="inline-flex items-center gap-1.5 text-xs text-charcoal/60 hover:text-gold font-medium">
                   <ArrowLeft className="w-3.5 h-3.5" /> Back to Sign In
                 </Link>

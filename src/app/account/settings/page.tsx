@@ -11,29 +11,29 @@ export default function AccountSettingsPage() {
   const [saved, setSaved] = useState(false)
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-charcoal">
+    <div className="flex min-h-screen flex-col bg-[#FFFFFF] text-charcoal">
       <Header />
 
-      <main className="flex-1 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#DFEDE1] to-[#EDF4ED] py-16">
+      <main className="flex-1 bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#F7FAF7] to-[#FFFFFF] py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <div className="mb-10 flex items-center justify-between">
             <div>
               <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold block mb-1">Preferences</span>
               <h1 className="font-serif text-3xl md:text-4xl text-[#1C2921]">Settings</h1>
             </div>
-            <Button variant="outline" className="border-[#D5E5D7] text-[#1C2921] hover:bg-[#DFEDE1] rounded-full">Sign Out</Button>
+            <Button variant="outline" className="border-[#EAEFEA] text-[#1C2921] hover:bg-[#F7FAF7] rounded-full">Sign Out</Button>
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-[250px_1fr]">
             {/* Sidebar */}
             <nav className="space-y-2">
-              <Link href="/account" className="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
+              <Link href="/account" className="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F7FAF7] hover:text-white">
                 <CalendarDays className="h-4 w-4" /> My Bookings
               </Link>
-              <Link href="/account/wishlist" className="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
+              <Link href="/account/wishlist" className="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F7FAF7] hover:text-white">
                 <Heart className="h-4 w-4" /> Wishlist
               </Link>
-              <Link href="/account/profile" className="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#DFEDE1] hover:text-white">
+              <Link href="/account/profile" className="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium text-charcoal/70 transition-colors hover:bg-[#F7FAF7] hover:text-white">
                 <User className="h-4 w-4" /> Profile Details
               </Link>
               <Link href="/account/settings" className="flex items-center gap-3 rounded-2xl bg-gold text-forest font-bold px-4 py-3 text-sm">
@@ -43,7 +43,7 @@ export default function AccountSettingsPage() {
 
             {/* Content Area */}
             <div className="space-y-8 max-w-2xl">
-              <div className="bg-white rounded-3xl border border-[#D5E5D7] p-8 shadow-2xl">
+              <div className="bg-white rounded-3xl border border-[#EAEFEA] p-8 shadow-2xl">
                 <div className="flex items-center gap-3 mb-6">
                   <Bell className="w-5 h-5 text-gold" />
                   <h2 className="font-serif text-2xl text-[#1C2921]">Notification Preferences</h2>
@@ -56,7 +56,7 @@ export default function AccountSettingsPage() {
                     </div>
                     <input type="checkbox" defaultChecked className="w-5 h-5 accent-gold" />
                   </label>
-                  <label className="flex items-center justify-between cursor-pointer pt-3 border-t border-[#D5E5D7]">
+                  <label className="flex items-center justify-between cursor-pointer pt-3 border-t border-[#EAEFEA]">
                     <div>
                       <p className="text-sm font-medium text-[#1C2921]">Curated Collections & Seasonal Escapes</p>
                       <p className="text-xs text-charcoal/50">Early access previews to newly added villas and private estates</p>
@@ -66,7 +66,7 @@ export default function AccountSettingsPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-3xl border border-[#D5E5D7] p-8 shadow-2xl">
+              <div className="bg-white rounded-3xl border border-[#EAEFEA] p-8 shadow-2xl">
                 <div className="flex items-center gap-3 mb-6">
                   <Shield className="w-5 h-5 text-gold" />
                   <h2 className="font-serif text-2xl text-[#1C2921]">Security & Password</h2>

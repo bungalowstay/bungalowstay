@@ -26,7 +26,7 @@ export default function PropertyDetailPage() {
   }, [])
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#EDF4ED] text-charcoal selection:bg-gold selection:text-forest">
+    <div className="flex min-h-screen flex-col bg-[#FFFFFF] text-charcoal selection:bg-gold selection:text-forest">
       {/* Absolute header for cinematic gallery hero */}
       <Header className="absolute top-0 w-full z-50 bg-transparent border-none text-white [&_a]:text-white [&_span]:text-white" />
       
@@ -35,7 +35,7 @@ export default function PropertyDetailPage() {
         initial={{ y: -100 }}
         animate={{ y: showSubNav ? 0 : -100 }}
         transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl border-b border-[#D5E5D7] hidden md:block pt-4 shadow-2xl"
+        className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl border-b border-[#EAEFEA] hidden md:block pt-4 shadow-2xl"
       >
         <div className="container mx-auto px-12 flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
@@ -127,7 +127,7 @@ export default function PropertyDetailPage() {
             <div className="space-y-24">
               
               {/* Title & Basics */}
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-b border-[#D5E5D7] pb-16">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-b border-[#EAEFEA] pb-16">
                 <div className="flex justify-between items-start mb-10">
                   <div>
                     <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4">Private Villa</p>
@@ -159,7 +159,7 @@ export default function PropertyDetailPage() {
               </motion.div>
 
               {/* Spaces / Rooms Gallery */}
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-t border-[#D5E5D7] pt-20">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-t border-[#EAEFEA] pt-20">
                 <h2 className="font-serif text-3xl mb-12 text-[#1C2921]">The Spaces</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div className="group cursor-pointer">
@@ -180,7 +180,7 @@ export default function PropertyDetailPage() {
               </motion.div>
 
               {/* Meet the Host */}
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-y border-[#D5E5D7] py-20 my-20">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="border-y border-[#EAEFEA] py-20 my-20">
                 <div className="flex flex-col md:flex-row gap-12 items-center md:items-start">
                   <div className="w-32 h-32 rounded-full overflow-hidden relative shrink-0 border-2 border-gold/40">
                     <Image src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Host" fill className="object-cover" />
@@ -204,27 +204,27 @@ export default function PropertyDetailPage() {
             <div className="relative hidden lg:block">
               <motion.div 
                 initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, delay: 0.5 }}
-                className="sticky top-40 bg-white border border-[#D5E5D7] rounded-3xl p-10 shadow-[0_30px_100px_-20px_rgba(0,0,0,0.8)]"
+                className="sticky top-40 bg-white border border-[#EAEFEA] rounded-3xl p-10 shadow-[0_30px_100px_-20px_rgba(0,0,0,0.8)]"
               >
-                <div className="flex justify-between items-end mb-10 border-b border-[#D5E5D7] pb-8">
+                <div className="flex justify-between items-end mb-10 border-b border-[#EAEFEA] pb-8">
                   <div>
                     <span className="font-serif text-4xl text-[#1C2921]">₹25,000</span>
                     <span className="text-[#1C2921]/40 ml-2 text-sm tracking-wide">/ night</span>
                   </div>
                 </div>
 
-                <div className="border border-[#D5E5D7] rounded-2xl mb-8 bg-white/60 overflow-hidden">
-                  <div className="flex border-b border-[#D5E5D7]">
-                    <div className="flex-1 p-4 border-r border-[#D5E5D7] cursor-pointer hover:bg-[#DFEDE1] transition-colors">
+                <div className="border border-[#EAEFEA] rounded-2xl mb-8 bg-white/60 overflow-hidden">
+                  <div className="flex border-b border-[#EAEFEA]">
+                    <div className="flex-1 p-4 border-r border-[#EAEFEA] cursor-pointer hover:bg-[#F7FAF7] transition-colors">
                       <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-2">Check-in</label>
                       <div className="text-sm text-white">Add date</div>
                     </div>
-                    <div className="flex-1 p-4 cursor-pointer hover:bg-[#DFEDE1] transition-colors">
+                    <div className="flex-1 p-4 cursor-pointer hover:bg-[#F7FAF7] transition-colors">
                       <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-2">Check-out</label>
                       <div className="text-sm text-white">Add date</div>
                     </div>
                   </div>
-                  <div className="p-4 cursor-pointer hover:bg-[#DFEDE1] transition-colors">
+                  <div className="p-4 cursor-pointer hover:bg-[#F7FAF7] transition-colors">
                     <label className="block text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-2">Guests</label>
                     <div className="text-sm text-white">2 Guests</div>
                   </div>
