@@ -100,7 +100,7 @@ export function Header({ className, theme = "transparent" }: { className?: strin
           <div className="flex items-center gap-3 sm:gap-4 relative z-50 flex-shrink-0">
             <Link 
               href="/bungalows"
-              className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-[#244833]/25 text-[#1C2921] hover:border-[#244833] hover:text-[#244833] hover:bg-[#244833]/10 transition-all duration-300 shadow-sm"
+              className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full border border-[#EAEFEA] text-[#1A462B] bg-[#F7FAF7] hover:border-[#1A462B]/30 hover:bg-white hover:text-[#1A462B] transition-all duration-300 shadow-sm"
               aria-label="Search"
             >
               <Search className="h-4 w-4" />
@@ -108,14 +108,14 @@ export function Header({ className, theme = "transparent" }: { className?: strin
             
             <Link 
               href="/bungalows" 
-              className="hidden lg:inline-flex items-center justify-center px-6 py-2.5 xl:px-7 xl:py-3 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 bg-gradient-to-r from-[#244833] to-[#1A3626] text-white shadow-[0_4px_14px_rgba(36,72,51,0.22)] hover:shadow-[0_8px_20px_rgba(36,72,51,0.35)] hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
+              className="hidden lg:inline-flex items-center justify-center px-6 py-2.5 xl:px-7 xl:py-3 rounded-full text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 bg-[#1A462B] hover:bg-[#235838] text-white shadow-[0_4px_16px_rgba(26,70,43,0.18)] hover:shadow-[0_6px_20px_rgba(26,70,43,0.25)] hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
             >
               Reserve Now
             </Link>
 
             {/* MOBILE MENU TOGGLE */}
             <button 
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-[#244833]/25 text-[#1C2921] bg-white/90 backdrop-blur-md hover:border-[#244833] transition-colors shadow-sm"
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-[#EAEFEA] text-[#1A462B] bg-white shadow-sm hover:border-[#1A462B]/40 transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle Menu"
             >

@@ -29,52 +29,50 @@ const SocialIcons = [
 
 export function Footer() {
   return (
-    <footer className="bg-forest text-white/90 overflow-hidden relative">
+    <footer className="bg-white text-[#0F1A14] overflow-hidden relative border-t border-[#EAEFEA]">
       {/* Decorative top border */}
-      <div className="h-1 w-full bg-gradient-to-r from-gold-light/20 via-gold/50 to-gold-light/20" />
+      <div className="h-1 w-full bg-gradient-to-r from-emerald-500/10 via-[#2E6B47]/40 to-emerald-500/10" />
       
-      <div className="container mx-auto px-6 lg:px-12 pt-24 pb-12">
+      <div className="container mx-auto px-6 lg:px-12 pt-20 pb-12">
         {/* Top Section - Newsletter & Brand */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-20">
           <div className="lg:col-span-5">
-            <Link href="/" className="inline-block mb-10 group relative z-10" aria-label="Bungalow Stay Home">
-              <div className="inline-flex items-center justify-center bg-white px-7 py-5 rounded-2xl shadow-xl border border-white/40 transition-all duration-300 group-hover:scale-105">
-                <div className="relative h-20 w-44 sm:h-24 sm:w-52 flex-shrink-0">
-                  <Image 
-                    src="/logo.png" 
-                    alt="Bungalow Stay Logo" 
-                    fill
-                    className="object-contain drop-shadow-sm" 
-                  />
-                </div>
+            <Link href="/" className="inline-block mb-8 group relative z-10" aria-label="Bungalow Stay Home">
+              <div className="relative h-20 w-48 sm:h-24 sm:w-56 transition-transform duration-300 group-hover:scale-105">
+                <Image 
+                  src="/logo.png" 
+                  alt="Bungalow Stay Logo" 
+                  fill
+                  className="object-contain object-left drop-shadow-[0_2px_12px_rgba(46,107,71,0.12)]" 
+                />
               </div>
             </Link>
-            <p className="text-white/80 text-sm leading-relaxed max-w-md mb-10 text-pretty">
+            <p className="text-[#0F1A14]/75 text-sm leading-relaxed max-w-md mb-8 text-pretty">
               Discover India's most exceptional private homes and architectural masterworks. Hand-picked, rigorously inspected, and perfectly serviced for your next unforgettable luxury getaway.
             </p>
             
             <div className="flex gap-4">
               {SocialIcons.map((social, i) => (
-                <a key={i} href={social.href} className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-ivory transition-all duration-300">
+                <a key={i} href={social.href} className="w-10 h-10 rounded-full border border-[#EAEFEA] bg-[#F7FAF7] text-[#2E6B47] flex items-center justify-center hover:bg-[#2E6B47] hover:border-[#2E6B47] hover:text-white transition-all duration-300 shadow-sm">
                   <social.icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
           </div>
 
-          <div className="lg:col-span-6 lg:col-start-7 flex flex-col justify-center">
-            <h3 className="font-serif text-3xl lg:text-4xl text-white mb-4">The Art of the Escape</h3>
-            <p className="text-white/60 text-sm mb-8">Subscribe to our journal for exclusive access to new properties, curated itineraries, and insider travel stories.</p>
+          <div className="lg:col-span-6 lg:col-start-7 flex flex-col justify-center bg-[#F7FAF7] p-8 lg:p-10 rounded-3xl border border-[#EAEFEA]">
+            <h3 className="font-serif text-3xl lg:text-4xl text-[#0F1A14] mb-3">The Art of the Escape</h3>
+            <p className="text-[#0F1A14]/70 text-sm mb-6">Subscribe to our journal for exclusive access to new properties, curated itineraries, and insider travel stories.</p>
             
-            <form className="flex flex-col sm:flex-row gap-4">
+            <form className="flex flex-col sm:flex-row gap-3">
               <input 
                 type="email" 
                 placeholder="Enter your email address" 
-                className="bg-white/5 border border-[#EAEFEA] rounded-full px-6 py-4 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-gold/50 focus:bg-white/10 transition-all flex-1"
+                className="bg-white border border-[#EAEFEA] rounded-full px-6 py-4 text-sm text-[#0F1A14] placeholder:text-[#0F1A14]/40 focus:outline-none focus:border-[#2E6B47] focus:ring-2 focus:ring-[#2E6B47]/10 transition-all flex-1 shadow-sm"
               />
               <button 
                 type="submit" 
-                className="bg-gold text-ivory px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-forest transition-colors flex items-center justify-center gap-2"
+                className="bg-[#2E6B47] hover:bg-[#245437] text-white px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2"
               >
                 Subscribe <ArrowRight className="w-4 h-4" />
               </button>
@@ -85,49 +83,49 @@ export function Footer() {
         {/* Middle Section - Links Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-8 pt-16 border-t border-[#EAEFEA] mb-16">
           <div>
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-8">Destinations</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#2E6B47] mb-8">Destinations</h4>
             <ul className="space-y-4">
-              <li><Link href="/destinations/goa" className="text-sm text-white/70 hover:text-gold transition-colors block">Goa</Link></li>
-              <li><Link href="/destinations/lonavala" className="text-sm text-white/70 hover:text-gold transition-colors block">Lonavala</Link></li>
-              <li><Link href="/destinations/alibaug" className="text-sm text-white/70 hover:text-gold transition-colors block">Alibaug</Link></li>
-              <li><Link href="/destinations/mahabaleshwar" className="text-sm text-white/70 hover:text-gold transition-colors block">Mahabaleshwar</Link></li>
-              <li><Link href="/destinations" className="text-xs font-medium text-white/90 hover:text-gold transition-colors block mt-6 flex items-center gap-1">View All <ArrowRight className="w-3 h-3" /></Link></li>
+              <li><Link href="/destinations/goa" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Goa</Link></li>
+              <li><Link href="/destinations/lonavala" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Lonavala</Link></li>
+              <li><Link href="/destinations/alibaug" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Alibaug</Link></li>
+              <li><Link href="/destinations/mahabaleshwar" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Mahabaleshwar</Link></li>
+              <li><Link href="/destinations" className="text-xs font-bold text-[#2E6B47] hover:text-[#245437] transition-colors block mt-6 flex items-center gap-1">View All <ArrowRight className="w-3 h-3" /></Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-8">Curated Stays</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#2E6B47] mb-8">Curated Stays</h4>
             <ul className="space-y-4">
-              <li><Link href="/experiences/private-pools" className="text-sm text-white/70 hover:text-gold transition-colors block">Private Pool Villas</Link></li>
-              <li><Link href="/experiences/heritage" className="text-sm text-white/70 hover:text-gold transition-colors block">Heritage Estates</Link></li>
-              <li><Link href="/experiences/nature" className="text-sm text-white/70 hover:text-gold transition-colors block">Nature Retreats</Link></li>
-              <li><Link href="/experiences/pet-friendly" className="text-sm text-white/70 hover:text-gold transition-colors block">Pet-Friendly Homes</Link></li>
+              <li><Link href="/experiences/private-pools" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Private Pool Villas</Link></li>
+              <li><Link href="/experiences/heritage" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Heritage Estates</Link></li>
+              <li><Link href="/experiences/nature" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Nature Retreats</Link></li>
+              <li><Link href="/experiences/pet-friendly" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Pet-Friendly Homes</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-8">Company</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#2E6B47] mb-8">Company</h4>
             <ul className="space-y-4">
-              <li><Link href="/about" className="text-sm text-white/70 hover:text-gold transition-colors block">Our Story</Link></li>
-              <li><Link href="/journal" className="text-sm text-white/70 hover:text-gold transition-colors block">The Journal</Link></li>
-              <li><Link href="/careers" className="text-sm text-white/70 hover:text-gold transition-colors block">Careers</Link></li>
-              <li><Link href="/partner" className="text-sm text-white/70 hover:text-gold transition-colors block">Partner With Us</Link></li>
+              <li><Link href="/about" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Our Story</Link></li>
+              <li><Link href="/journal" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">The Journal</Link></li>
+              <li><Link href="/careers" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Careers</Link></li>
+              <li><Link href="/partner" className="text-sm text-[#0F1A14]/70 hover:text-[#2E6B47] transition-colors block font-medium">Partner With Us</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-8">Contact Us</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#2E6B47] mb-8">Contact Us</h4>
             <ul className="space-y-5">
-              <li className="flex items-start gap-3 text-sm text-white/70">
-                <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3 text-sm text-[#0F1A14]/75">
+                <MapPin className="w-5 h-5 text-[#2E6B47] shrink-0 mt-0.5" />
                 <span className="leading-relaxed">12th Floor, The Estate<br/>Bandra West, Mumbai 400050</span>
               </li>
-              <li className="flex items-center gap-3 text-sm text-white/70">
-                <Phone className="w-5 h-5 text-gold shrink-0" />
+              <li className="flex items-center gap-3 text-sm text-[#0F1A14]/75">
+                <Phone className="w-5 h-5 text-[#2E6B47] shrink-0" />
                 <span>+91 98765 43210</span>
               </li>
-              <li className="flex items-center gap-3 text-sm text-white/70">
-                <Mail className="w-5 h-5 text-gold shrink-0" />
+              <li className="flex items-center gap-3 text-sm text-[#0F1A14]/75">
+                <Mail className="w-5 h-5 text-[#2E6B47] shrink-0" />
                 <span>reservations@bungalowstay.com</span>
               </li>
             </ul>
@@ -135,12 +133,12 @@ export function Footer() {
         </div>
 
         {/* Bottom Section - Legal */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#EAEFEA] text-[11px] text-white/40 tracking-wider uppercase">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#EAEFEA] text-[11px] text-[#0F1A14]/50 tracking-wider uppercase">
           <p>© {new Date().getFullYear()} Bungalow Stay. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-6 mt-4 md:mt-0">
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/cancellation" className="hover:text-white transition-colors">Cancellation Policy</Link>
+            <Link href="/terms" className="hover:text-[#2E6B47] transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-[#2E6B47] transition-colors">Privacy Policy</Link>
+            <Link href="/cancellation" className="hover:text-[#2E6B47] transition-colors">Cancellation Policy</Link>
           </div>
         </div>
       </div>

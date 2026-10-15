@@ -66,17 +66,17 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
                 <Link 
                   href="/bungalows" 
-                  className="bg-gradient-to-r from-[#244833] to-[#1A3626] text-white px-10 py-5 rounded-full text-xs font-bold uppercase tracking-[0.15em] shadow-[0_10px_30px_rgba(36,72,51,0.25)] hover:shadow-[0_15px_40px_rgba(36,72,51,0.4)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-3 group"
+                  className="bg-[#1A462B] hover:bg-[#235838] text-white px-10 py-5 rounded-full text-xs font-bold uppercase tracking-[0.15em] shadow-[0_6px_25px_rgba(26,70,43,0.2)] hover:shadow-[0_10px_35px_rgba(26,70,43,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-3 group"
                 >
                   Explore Collection 
                   <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform" />
                 </Link>
                 <Link 
                   href="/experiences" 
-                  className="flex items-center gap-4 text-xs font-bold uppercase tracking-[0.15em] text-[#1C2921] hover:text-[#244833] transition-colors group"
+                  className="flex items-center gap-4 text-xs font-bold uppercase tracking-[0.15em] text-[#0F1A14] hover:text-[#1A462B] transition-colors group"
                 >
-                  <span className="flex h-14 w-14 items-center justify-center rounded-full border border-[#244833]/25 bg-white shadow-sm group-hover:border-[#244833] group-hover:bg-[#244833]/10 transition-all duration-300">
-                    <Play className="h-4 w-4 fill-current ml-1 text-[#244833]" />
+                  <span className="flex h-14 w-14 items-center justify-center rounded-full border border-[#EAEFEA] bg-white shadow-sm group-hover:border-[#1A462B]/30 group-hover:bg-[#F7FAF7] transition-all duration-300">
+                    <Play className="h-4 w-4 fill-current ml-1 text-[#1A462B]" />
                   </span>
                   View Curated Films
                 </Link>
@@ -85,45 +85,45 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ==================== 02: INTELLIGENT SEARCH (Greenish-White Glass Panel) ==================== */}
+        {/* ==================== 02: INTELLIGENT SEARCH (Pure White Bright Glass Panel) ==================== */}
         <div className="container mx-auto px-6 lg:px-12 relative z-30 -mt-20 mb-32">
           <motion.div 
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="bg-white/95 backdrop-blur-2xl rounded-3xl shadow-[0_20px_60px_rgba(28,41,33,0.12)] border border-[#244833]/15 p-3 flex flex-col lg:flex-row items-center divide-y lg:divide-y-0 lg:divide-x divide-[#EAEFEA]"
+            className="bg-white rounded-3xl shadow-[0_20px_50px_rgba(15,26,20,0.06)] border border-[#EAEFEA] p-3 flex flex-col lg:flex-row items-center divide-y lg:divide-y-0 lg:divide-x divide-[#EAEFEA]"
           >
-            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#FFFFFF] rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none transition-colors group">
-              <div className="w-11 h-11 rounded-full bg-[#ECF2ED] border border-[#244833]/15 flex items-center justify-center group-hover:border-[#244833] group-hover:bg-[#244833]/10 transition-colors">
-                <MapPin className="w-5 h-5 text-[#244833]" />
+            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#F7FAF7] rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none transition-colors group">
+              <div className="w-11 h-11 rounded-full bg-[#F4F8F4] border border-[#EAEFEA] flex items-center justify-center group-hover:border-[#1A462B]/30 group-hover:bg-white transition-colors">
+                <MapPin className="w-5 h-5 text-[#1A462B]" />
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#4E6B56] mb-1">Destination</p>
-                <p className="text-sm font-semibold text-[#1C2921]">Where to?</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#2C523B] mb-1">Destination</p>
+                <p className="text-sm font-semibold text-[#0F1A14]">Where to?</p>
               </div>
             </div>
-            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#FFFFFF] transition-colors group">
-              <div className="w-11 h-11 rounded-full bg-[#ECF2ED] border border-[#244833]/15 flex items-center justify-center group-hover:border-[#244833] group-hover:bg-[#244833]/10 transition-colors">
-                <Calendar className="w-5 h-5 text-[#244833]" />
+            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#F7FAF7] transition-colors group">
+              <div className="w-11 h-11 rounded-full bg-[#F4F8F4] border border-[#EAEFEA] flex items-center justify-center group-hover:border-[#1A462B]/30 group-hover:bg-white transition-colors">
+                <Calendar className="w-5 h-5 text-[#1A462B]" />
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#4E6B56] mb-1">Check In</p>
-                <p className="text-sm font-semibold text-[#1C2921]">Add dates</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#2C523B] mb-1">Check In</p>
+                <p className="text-sm font-semibold text-[#0F1A14]">Add dates</p>
               </div>
             </div>
-            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#FFFFFF] transition-colors group">
-              <div className="w-11 h-11 rounded-full bg-[#ECF2ED] border border-[#244833]/15 flex items-center justify-center group-hover:border-[#244833] group-hover:bg-[#244833]/10 transition-colors">
-                <Users className="w-5 h-5 text-[#244833]" />
+            <div className="flex-1 p-5 px-8 w-full flex items-center gap-5 cursor-pointer hover:bg-[#F7FAF7] transition-colors group">
+              <div className="w-11 h-11 rounded-full bg-[#F4F8F4] border border-[#EAEFEA] flex items-center justify-center group-hover:border-[#1A462B]/30 group-hover:bg-white transition-colors">
+                <Users className="w-5 h-5 text-[#1A462B]" />
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#4E6B56] mb-1">Guests</p>
-                <p className="text-sm font-semibold text-[#1C2921]">Add guests</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#2C523B] mb-1">Guests</p>
+                <p className="text-sm font-semibold text-[#0F1A14]">Add guests</p>
               </div>
             </div>
             <div className="p-3 w-full lg:w-auto">
               <Link 
                 href="/bungalows"
-                className="w-full lg:w-auto bg-gradient-to-r from-[#244833] to-[#1A3626] text-white px-10 py-5 rounded-2xl text-xs font-bold uppercase tracking-[0.15em] shadow-[0_8px_25px_rgba(36,72,51,0.3)] hover:shadow-[0_12px_35px_rgba(36,72,51,0.5)] transition-all flex items-center justify-center gap-2"
+                className="w-full lg:w-auto bg-[#1A462B] hover:bg-[#235838] text-white px-10 py-5 rounded-2xl text-xs font-bold uppercase tracking-[0.15em] shadow-[0_6px_20px_rgba(26,70,43,0.22)] hover:shadow-[0_10px_30px_rgba(26,70,43,0.3)] transition-all flex items-center justify-center gap-2"
               >
                 <Search className="w-4 h-4" /> Search
               </Link>
