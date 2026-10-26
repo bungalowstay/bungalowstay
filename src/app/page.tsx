@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+import Waves from "@/components/backgrounds/Waves"
 import { MapPin, Calendar, Users, Search, Star, Heart, ArrowRight, Play, ChevronRight, ChevronLeft, ShieldCheck, Award, Sparkles, Compass } from "lucide-react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
@@ -38,8 +39,28 @@ export default function Home() {
               priority
             />
             {/* Ultra-Luminous Pure White Luxury Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/70 to-white" />
-            <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/60 to-white" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent" />
+
+            {/* ReactBits Waves Background Effect tailored for luxury botanical emerald & gold theme */}
+            <div className="absolute inset-0 z-10 pointer-events-none opacity-90">
+              <Waves
+                lineColor="#1A462B"
+                accentColor="#A88647"
+                backgroundColor="transparent"
+                lineStyle="solid"
+                spacing={16}
+                lineWidth={1.5}
+                amplitude={36}
+                speed={0.8}
+                twist={0.9}
+                mouseInteraction={true}
+                mouseRadius={200}
+                mouseStrength={1.2}
+                fade={0.1}
+                opacity={0.85}
+              />
+            </div>
           </motion.div>
 
           <div className="container relative z-10 mx-auto px-6 lg:px-12 h-full flex flex-col justify-center pb-28">
